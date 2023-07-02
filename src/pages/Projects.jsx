@@ -15,7 +15,7 @@ const Projects = ({ data }) => {
 
 
 
-        <div>
+        <div className='project'>
 
             <select value={selectedOption} onChange={handleOptionChange}>
                 <option value="">Select Tech</option>
