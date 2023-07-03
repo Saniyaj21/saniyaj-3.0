@@ -1,23 +1,33 @@
 import './App.css';
-import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
 
 // style
 
 
 import data from './data.json';
 import Projects from './pages/Projects';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.jsx';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
 
   return (
-    <div className="App">
+    // <div className="App">
+    //   <Navbar />
+
+
+    // </div >
+    <Router>
       <Navbar />
-      Deploy successfull
 
-      <Projects data={data} />
-
-    </div >
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        {/* <Route path='*' element={<ErrorPage />} /> */}
+      </Routes>
+    </Router>
   );
 }
 

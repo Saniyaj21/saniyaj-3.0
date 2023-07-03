@@ -1,44 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/navbar.scss';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
+    const [isNavActive, setNavActive] = useState(false);
 
-    const nav_active = document.querySelectorAll('.navbar');
+    const openMenu = () => {
+        console.log('OPEN');
+        setNavActive(true);
+    };
 
-    const open_menu = () => {
-        nav_active.forEach((elem) => elem.classList.add('active'))
-    }
-
-    const close_nav = () => {
-        nav_active.forEach(elem => elem.classList.remove('active'))
-    }
+    const closeNav = () => {
+        console.log('CLOSE');
+        setNavActive(false);
+    };
 
     return (
-
         <header>
-            <div class="logo">
-                <a href="#">Saniyaj Mallik</a>
+            <div className="logo">
+                <Link to="#">Saniyaj Mallik</Link>
             </div>
 
-            <div class="menu">
-                <i class="fa-sharp fa-solid fa-bars" onClick={open_menu}></i>
-                <div class="navbar nav-first">
-                    <div class="navbar nav-second">
-                        <div class="navbar navbar-list">
-                            <i class="fa-solid fa-square-xmark" onClick={close_nav}></i>
+            <div className="menu">
+                <i className="fa-sharp fa-solid fa-bars" onClick={openMenu}></i>
+                <div className={`navbar nav-first ${isNavActive ? 'active' : ''}`}>
 
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#" >about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <i className="fa-solid fa-square-xmark" onClick={closeNav}></i>
+
+
+                    <ul>
+                        <div className="image"></div>
+                        <li>
+                            <Link to="/" className='li-link'>Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/about" className='li-link'>about</Link>
+                        </li>
+                        <li>
+                            <Link to="#" className='li-link'>Skills</Link>
+                        </li>
+                        <li>
+                            <Link to="#" className='li-link'>Projects</Link>
+                        </li>
+                        <li>
+                            <Link to="#" className='li-link'>services</Link>
+                        </li>
+                        <li>
+                            <Link to="#" className='li-link'>contact</Link>
+                        </li>
+                    </ul>
+
+
                 </div>
             </div>
         </header>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
