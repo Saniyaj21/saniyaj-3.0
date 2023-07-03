@@ -7,33 +7,40 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
+
 
 p,
 a,
 li {
     font-size: 1.7rem;
     color: #20262E;
-    overflow-x: hidden;
+}
+
+li a {
+    color: #20262E;
+
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .fa-bars {
     font-size: 3.2rem;
+    color: white;
 }
 
 header {
     border-bottom: 2px solid blue;
     height: 7rem;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 20px;
+    justify-content: space-around;
     align-items: center;
-    /*background-color: red;*/
+    overflow: hidden;
+    background-color: #0613cfc4;
 }
 
 .logo a {
@@ -48,70 +55,60 @@ header {
 
 .navbar {
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    transform: translateX(100%);
+    display: none;
     transition: all 0.3s linear;
+    overflow: hidden;
 }
 
 .nav-first {
     width: 50%;
-    max-width: 30rem;
+    max-width: 33rem;
     min-width: 30rem;
     background-color: #655DBB;
 }
 
-.nav-second {
-    background-color: #3E54AC;
-    width: 95%;
-}
-
-.navbar-list {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 120px;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
+.nav-first ul {
+    height: 100%;
     background-color: #ECF2FF;
-}
-
-.navbar-list ul {
     display: flex;
     flex-direction: column;
-    justify-items: flex-start;
+    // justify-content: center;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.nav-first ul li {
+
     list-style: none;
     width: 100%;
-
-
-}
-
-.navbar-list ul li {
-    width: 100%;
-    height: 50px;
+    height: 45px;
     text-align: center;
+    margin: 0px;
     transition: 0.5s;
+    border-radius: 5px;
 
     &:hover {
         background-color: #655DBB;
     }
+
+    &:hover .li-link {
+        color: white;
+    }
 }
 
-.navbar-list a {
-    line-height: 50px;
-    font-size: 2.4rem;
-    text-transform: uppercase;
+.li-link {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     transition: 0.5s;
+    line-height: 45px;
+    text-transform: uppercase;
 }
-
-.navbar-list a:hover {
-    color: white;
-}
-
 
 .active {
-    transform: translateX(0);
+    display: block;
 }
 
 .fa-square-xmark {
@@ -119,4 +116,13 @@ header {
     top: 5%;
     right: 15%;
     font-size: 3.2rem;
+}
+
+// image
+.image {
+    height: 130px;
+    width: 130px;
+    background-color: red;
+    margin-bottom: 20px;
+    border-radius: 50%;
 }

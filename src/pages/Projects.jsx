@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+// import { motion } from 'framer-motion';
 
 const Projects = ({ data }) => {
 
@@ -41,7 +42,8 @@ const Projects = ({ data }) => {
                     );
                 };
 
-            })}</div>
+            })}
+        </div>
     )
 }
 
