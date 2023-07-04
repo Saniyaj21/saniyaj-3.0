@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/navbar.scss';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
+import dp from '../media/dp.jpg'
 
 
 const Navbar = () => {
@@ -30,31 +32,31 @@ const Navbar = () => {
 
 
                     <ul>
-                        <div className="image"></div>
-                        <li>
-                            <Link to="/" className='li-link'>Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about" className='li-link'>about</Link>
-                        </li>
-                        <li>
-                            <Link to="#" className='li-link'>Skills</Link>
-                        </li>
-                        <li>
-                            <Link to="#" className='li-link'>Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="#" className='li-link'>services</Link>
-                        </li>
-                        <li>
-                            <Link to="#" className='li-link'>contact</Link>
-                        </li>
+                        <motion.div className="image"
+                            animate={{
+                                y: [0, 5, 0],
+                            }}
+                            transition={{
+                                repeat: Infinity
+                            }}
+                        >
+                            <img src={dp} alt="" className='nav-dp' />
+                        </motion.div>
+
+
+
+                        <Link to="/" className='li-link' onClick={closeNav}><li>Home</li></Link>
+                        <Link to="/about" className='li-link' onClick={closeNav}><li>About</li></Link>
+                        <Link to="/qualification" className='li-link' onClick={closeNav}><li>Qualifications</li></Link>
+                        <Link to="/skills" className='li-link' onClick={closeNav}><li>Skills</li></Link>
+                        <Link to="/projects" className='li-link' onClick={closeNav}><li>Projects</li></Link>
+                        <Link to="/contact" className='li-link' onClick={closeNav}><li>Contack Me</li></Link>
                     </ul>
 
 
                 </div>
             </div>
-        </header>
+        </header >
     );
 };
 
