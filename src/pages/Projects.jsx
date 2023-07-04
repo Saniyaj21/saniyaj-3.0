@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
+import data from '../data.json'
 // import { motion } from 'framer-motion';
 
-const Projects = ({ data }) => {
+const Projects = () => {
 
 
     const [selectedOption, setSelectedOption] = useState('');
