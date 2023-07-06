@@ -1,0 +1,56 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Lobster&family=Yatra+One&display=swap');
+
+// testing
+.border {
+    border: 2px solid red;
+}
+
+.border-blue {
+    border: 2px solid blue;
+}
+
+.div-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-flex-2-width {
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+
+    .div-flex {
+        flex-direction: column;
+    }
+
+    .div-flex-2-width {
+        width: 100%;
+    }
+}
+
+.h1 {
+    font-size: 30px;
+    font-weight: 300px;
+    font-weight: 500;
+}
+
+.h2 {
+    font-size: 26px;
+}
+
+.font-head {
+    font-family: 'Carter One', cursive;
+    font-weight: 400;
+}
+
+.font {
+    font-family: 'Lobster', cursive;
+
+}
+
+.font-p {
+    font-family: 'Yatra One', cursive;
+}

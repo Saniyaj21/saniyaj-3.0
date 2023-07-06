@@ -8,6 +8,13 @@ html {
     scroll-behavior: smooth;
 }
 
-.writer {
-    font-size: 30px;
+.container {
+    padding: 0px 14%;
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        padding: 0px 5%;
+    }
 }
