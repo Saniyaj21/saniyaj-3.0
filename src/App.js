@@ -1,4 +1,5 @@
 import './App.css';
+import '../src/styles/common.scss'
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import Navbar from './components/Navbar.jsx';
@@ -8,6 +9,7 @@ import Qualification from './pages/Qualification';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+
 
 function App() {
 
