@@ -7,3 +7,7 @@ html {
     margin-top: opx;
     scroll-behavior: smooth;
 }
+
+.writer {
+    font-size: 30px;
+}
