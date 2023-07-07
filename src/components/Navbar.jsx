@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <header>
             <div className="logo">
-                <Link to="#">Saniyaj Mallik</Link>
+                <Link to="#"><span className="font-p">Saniyaj Mallik</span></Link>
             </div>
 
             <div className="menu">
