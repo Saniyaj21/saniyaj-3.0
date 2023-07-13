@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lexend Deca Light";
+    // font-family: "Lexend Deca Light";
 }
 
 html {
@@ -49,7 +49,7 @@ header {
 
 .logo a {
     font-size: 2.5rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 @media (max-width: 767px) {
@@ -107,7 +107,7 @@ header {
     font-weight: 500;
     color: black;
     letter-spacing: 0.2px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
     &:hover {
         // background-color: white;
@@ -145,8 +145,8 @@ header {
     height: 130px;
     width: 130px;
     margin-bottom: 20px;
-    border: 2px solid green;
-    border-radius: 50%;
+    border: 2px solid aqua;
+    border-radius: 10px;
     transition: 0.3s;
 
     &:hover {
@@ -157,5 +157,5 @@ header {
 .nav-dp {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 10px;
 }

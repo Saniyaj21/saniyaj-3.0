@@ -33,24 +33,24 @@ const Navbar = () => {
 
                     <ul>
                         <motion.div className="image"
-                            animate={{
-                                y: [0, 5, 0],
-                            }}
-                            transition={{
-                                repeat: Infinity
-                            }}
+                        // animate={{
+                        //     y: [0, 5, 0],
+                        // }}
+                        // transition={{
+                        //     repeat: Infinity
+                        // }}
                         >
                             <img src={dp} alt="" className='nav-dp' />
                         </motion.div>
 
 
 
-                        <Link to="/" className='li-link' onClick={closeNav}><li>Home</li></Link>
-                        <Link to="/about" className='li-link' onClick={closeNav}><li>About</li></Link>
-                        <Link to="/qualification" className='li-link' onClick={closeNav}><li>Qualifications</li></Link>
-                        <Link to="/skills" className='li-link' onClick={closeNav}><li>Skills</li></Link>
-                        <Link to="/projects" className='li-link' onClick={closeNav}><li>Projects</li></Link>
-                        <Link to="/contact" className='li-link' onClick={closeNav}><li>Contack Me</li></Link>
+                        <Link to="/" className='li-link font-p' onClick={closeNav}><li>Home</li></Link>
+                        <Link to="/about" className='li-link font-p' onClick={closeNav}><li>About</li></Link>
+                        <Link to="/qualification" className='li-link font-p' onClick={closeNav}><li>Qualifications</li></Link>
+                        <Link to="/skills" className='li-link font-p' onClick={closeNav}><li>Skills</li></Link>
+                        <Link to="/projects" className='li-link font-p' onClick={closeNav}><li>Projects</li></Link>
+                        <Link to="/contact" className='li-link font-p' onClick={closeNav}><li>Contack Me</li></Link>
                     </ul>
 
 
