@@ -12,13 +12,47 @@
     }
 
     button {
-        background-color: white;
-        color: blue;
-        height: 40px;
-        width: 150px;
-        border-radius: 10px 30px;
-        border: 2px solid blue;
-        font-size: 20px;
         margin-top: 10px;
     }
+}
+
+.home-btn {
+
+    align-items: start;
+    border: 1px solid red;
+}
+
+.space {
+    height: 100vh;
+}
+
+.big-box {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+}
+
+.in-box {
+    height: 100px;
+    width: 80%;
+    background-color: white;
+    margin: 20px;
+}
+
+.resume-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24
 }
