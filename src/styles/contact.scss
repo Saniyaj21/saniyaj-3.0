@@ -1,0 +1,15 @@
+.big-box {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+}
+
+.in-box {
+    height: 100px;
+    width: 100px;
+    background-color: var(--green);
+    margin: 20px;
+    display: inline-block;
+    border-radius: 50%;
+}

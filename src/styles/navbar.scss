@@ -34,7 +34,7 @@ a {
 
 header {
     border-bottom: 2px solid blue;
-    height: 7rem;
+    height: 6rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,8 @@ header {
     top: 0px;
     align-items: center;
     overflow: hidden;
-    background-color: #0613cf;
+    background-color: var(--blue);
+    // background-color: #0613cf;
     z-index: 50;
 }
 
