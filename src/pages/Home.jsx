@@ -23,7 +23,8 @@ import Loading from '../components/Loading';
 import "../styles/home.scss";
 
 // resumePDF
-import resumePDF from '../media/resume.pdf'; // Replace with the actual path to your local PDF file
+import resumePDF from '../media/resume.pdf';
+import banner from '../media/banner2.png';
 
 
 
@@ -91,9 +92,7 @@ const Home = () => {
 
                                     <Link to={"/contact"}><button className='btn'>Contact Me</button></Link>
                                     <button className="btn resume-btn" onClick={handleDownload}>
-                                        Resume <span class="material-symbols-outlined">
-                                            download
-                                        </span>
+                                        Resume <span><i className="fa-solid fa-download"></i></span>
                                     </button>
                                 </div>
 
@@ -101,57 +100,12 @@ const Home = () => {
 
                             <div className="first-box-right div-flex-2-width">
 
-                                <h2>Right</h2>
+                                <div className="banner-box">
+                                    <img className="banner" loading="lazy" src={banner} alt="" />
+                                </div>
                             </div>
 
                         </div>
-
-                        <div className="space"></div>
-
-                        <div data-aos="fade-up"
-                            data-aos-offset="150"
-
-                            className="big-box">
-
-                            <div
-                                data-aos="flip-up"
-                                data-aos-delay="300"
-                                // data-aos-offset="250"
-
-                                className="child-1 in-box"></div>
-
-                            <div
-                                data-aos="fade-right"
-                                data-aos-delay="300"
-                                // data-aos-duration="100"
-
-                                className="child-2 in-box"></div>
-                        </div>
-                        <div data-aos="fade-up"
-                            data-aos-offset="150"
-
-                            className="big-box">
-
-                            <div
-                                data-aos="flip-up"
-                                data-aos-delay="300"
-                                // data-aos-offset="250"
-
-                                className="child-1 in-box"></div>
-
-                            <div
-                                data-aos="fade-right"
-                                data-aos-delay="300"
-                                // data-aos-duration="100"
-
-                                className="child-2 in-box"></div>
-                        </div>
-
-
-
-
-
-
 
                     </section>
 
@@ -171,9 +125,10 @@ const Home = () => {
                         projects
                         <Projects />
                     </section>
+                                */}
                     <section id='contact-section'>
                         <Contact />
-                    </section> */}
+                    </section>
 
                 </div >
             }
