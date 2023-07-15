@@ -56,7 +56,10 @@ const Home = () => {
         <>
             {loading ? <Loading /> :
                 <div className='home container'>
-                    <section id='home-section' >
+                    <section id='home-section'
+                        data-aos="fade-up"
+
+                    >
 
                         <div className="first-main div-flex ">
 
@@ -73,13 +76,13 @@ const Home = () => {
                                     }}
                                     className="home-head-2 h1 font-head">I'm <span className="name font-head">Saniyaj mallik</span></motion.h1>
                                 <h2 className='writer h2'>I am a{" "}
-                                    <span className=''>
+                                    <span className='' style={{ color: 'blue', fontWeight: 'bold' }}>
                                         <Typewriter
                                             words={['Developer', 'Designer', "Student"]}
                                             loop={true}
                                             cursor
                                             cursorStyle='|'
-                                            typeSpeed={50}
+                                            typeSpeed={60}
                                         // deleteSpeed={50}
                                         // delaySpeed={1000}
 
@@ -92,7 +95,7 @@ const Home = () => {
 
                                     <Link to={"/contact"}><button className='btn'>Contact Me</button></Link>
                                     <button className="btn resume-btn" onClick={handleDownload}>
-                                        Resume <span><i className="fa-solid fa-download"></i></span>
+                                        Resume <span><i className="fa-solid fa-fade fa-download"></i></span>
                                     </button>
                                 </div>
 

@@ -6,10 +6,29 @@
 }
 
 .in-box {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     background-color: var(--green);
-    margin: 20px;
+    margin: 10px;
     display: inline-block;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.9s;
+
+    &:hover {
+        background-color: var(--yellow);
+    }
+}
+
+.social-icons {
+    font-size: 45px;
+
+}
+
+.contact-head {
+    h1 {
+        color: var(--blue);
+    }
 }
