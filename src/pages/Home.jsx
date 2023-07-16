@@ -7,10 +7,6 @@ import { motion } from "framer-motion";
 // type writer effect
 import { Typewriter } from 'react-simple-typewriter';
 
-// aos
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 // pages/components
 import About from '../pages/About';
 import Projects from '../pages/Projects';
@@ -32,7 +28,6 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        AOS.init();
         const timeout = setTimeout(() => {
             setLoading(false);
         }, 1000);
@@ -89,11 +84,11 @@ const Home = () => {
                                         />
                                     </span>
                                 </h2>
-                                <p className='font-p '>Dedicated BCA graduate passionate about crafting innovative web experiences.</p>
+                                <p className='font-p text-fit '>Dedicated BCA graduate passionate about crafting innovative web experiences.</p>
 
                                 <div className="home-btn div-flex">
 
-                                    <Link to={"/contact"}><button className='btn'>Contact Me</button></Link>
+                                    <a href="#contact"><button className='btn'>Contact Me</button></a>
                                     <button className="btn resume-btn" onClick={handleDownload}>
                                         Resume <span><i className="fa-solid fa-fade fa-download"></i></span>
                                     </button>
@@ -111,27 +106,19 @@ const Home = () => {
                         </div>
 
                     </section>
+                    <div className="space"></div>
+
+                    <About />
+                    <Qualification />
+                    <Skills />
+                    <Projects />
 
 
+                    <div className="space"></div>
+                    <div className="space"></div>
+                    <div className="space"></div>
 
-                    {/* 
-                    <section id='about-section'>
-                        <About />
-                    </section>
-                    <section id='qualification-section'>
-                        <Qualification />
-                    </section>
-                    <section id='skills-section'>
-                        <Skills />
-                    </section>
-                    <section id='projects-section'>
-                        projects
-                        <Projects />
-                    </section>
-                                */}
-                    <section id='contact-section'>
-                        <Contact />
-                    </section>
+                    <Contact />
 
                 </div >
             }
