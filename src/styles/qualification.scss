@@ -1,0 +1,78 @@
+#qualification {
+    padding-top: 60px;
+}
+
+.q-head {
+    color: var(--blue);
+    line-height: 70px;
+}
+
+.q-box-main {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.q-item-boxes {
+    width: 80%;
+    padding: 30px 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--green);
+    padding-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .q-item-boxes {
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+
+.course {
+    background-color: var(--blue);
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 2px 3px;
+}
+
+.institute {
+    color: var(--blue);
+    padding: 4px 3px;
+}
+
+.subject {
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2px 3px;
+    border-left: 2px solid var(--yellow);
+    border-top: 2px solid var(--yellow);
+}
+
+.year {
+    width: 50%;
+    display: inline-block;
+    padding: 2px 3px;
+}
+
+.marks {
+    padding: 2px 3px;
+    color: var(--green);
+    display: inline-block;
+    width: 50%;
+    border-right: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+    text-align: end;
+}
+
+.circle-point {
+    height: 16px;
+    width: 16px;
+    background-color: var(--green);
+    border-radius: 50%;
+    margin-left: -20px;
+
+}

@@ -19,6 +19,18 @@
     height: 10vh;
 }
 
+#about {
+    padding-top: 60px;
+}
+
+#contact {
+    padding-top: 60px;
+}
+
+.text-fit {
+    text-align: justify;
+}
+
 
 
 
@@ -37,16 +49,7 @@
     width: 50%;
 }
 
-@media (max-width: 767px) {
 
-    .div-flex {
-        flex-direction: column;
-    }
-
-    .div-flex-2-width {
-        width: 100%;
-    }
-}
 
 .h1 {
     font-size: 30px;
@@ -92,5 +95,27 @@
     &:hover {
         color: white;
         background-color: var(--blue);
+    }
+}
+
+.w-50 {
+    width: 50%;
+}
+
+
+
+// mobile view
+@media (max-width: 767px) {
+
+    .div-flex {
+        flex-direction: column;
+    }
+
+    .div-flex-2-width {
+        width: 100%;
+    }
+
+    .w-50 {
+        width: 100%;
     }
 }
