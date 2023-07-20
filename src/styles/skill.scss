@@ -1,0 +1,108 @@
+.skill-head {
+  color: var(--blue);
+}
+.skill-category {
+  margin: 15px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-skill {
+  margin: 0px 5px;
+  font-size: 18px;
+  &:hover {
+    background-color: var(--green);
+    color: white;
+  }
+}
+
+
+
+.active-skill-btn {
+  background-color: var(--green);
+  color: white;
+}
+#box-back {
+  display: block;
+}
+#box-front {
+  display: none;
+}
+#box-design {
+  display: none;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+.card-items{
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 150px;
+  height: 80px;
+  display: inline-block;
+}
+.icon{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech{
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#mongodb {
+  width: auto;
+  height: 20px;
+  object-fit: cover;
+}
+#django {
+  width: auto;
+  height: 25px;
+  object-fit: cover;
+}
+#git-icon{
+  font-size: 18px;
+}
+
+
+@media (max-width: 767px) {
+  .btn-skill {
+    font-size: 16px;
+    height: 30px;
+    width: 100px;
+  }
+  .card-items{
+    margin-left: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
