@@ -5,6 +5,7 @@ const Qualification = () => {
     return (
         <section id="qualification">
             <h2 className='font-p text-center h2 q-head'>My Qualifications</h2>
+            <hr className='hr-line' />
             <div
                 data-aos="fade-up"
                 data-aos-duration="700"

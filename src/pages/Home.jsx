@@ -20,7 +20,7 @@ import "../styles/home.scss";
 
 // resumePDF
 import resumePDF from '../media/resume.pdf';
-import banner from '../media/banner2.png';
+import banner from '../media/sani.png';
 
 
 

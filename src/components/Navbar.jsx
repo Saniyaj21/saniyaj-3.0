@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/navbar.scss';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import dp from '../media/dp.jpg'
+import dp from '../media/sani.png'
 
 // aos
 import AOS from 'aos';
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div
                     className={`navbar nav-first ${isNavActive ? 'active' : ''}`}>
 
-                    <i className="fa-solid fa-square-xmark" onClick={closeNav}></i>
+<i className="fa-solid fa-square-xmark" onClick={closeNav} style={{ color: 'white' }}></i>
 
 
                     <ul>
@@ -55,7 +55,7 @@ const Navbar = () => {
 
 
 
-                        <Link to="/" className='li-link font-p' onClick={closeNav}><li>Home</li></Link>
+                        <a href="#home-section" className='li-link font-p' onClick={closeNav}><li>Home</li></a>
                         <a href="#about" className='li-link font-p' onClick={closeNav}><li>About</li></a>
                         <a href="#qualification" className='li-link font-p' onClick={closeNav}><li>Qualifications</li></a>
                         <a href="#skills" className='li-link font-p' onClick={closeNav}><li>Skills</li></a>

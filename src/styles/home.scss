@@ -20,15 +20,7 @@
     }
 }
 
-@media (max-width: 767px) {
-    .first-box-left {
-        padding-top: 10px;
-        // margin-top: -150px;
-        // background-color: white;
-        // order: 2;
-    }
 
-}
 
 .home-btn {
 
@@ -70,6 +62,7 @@
     height: 412px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .banner-box {
@@ -81,7 +74,30 @@
     img {
         // margin-top: -300px;
         width: auto;
-        height: 500px;
+        height: 350px;
         // border: 1px solid black;
     }
+}
+@media (min-width: 768px){
+    .banner-box{
+        img{
+            height: 250px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .first-box-left {
+        padding-top: 10px;
+        order: 2;
+    }
+    .banner-box{
+        img{
+            height: 280px;
+        }
+    }
+    .first-box-left{
+        margin-top: -100px;
+    }
+
 }

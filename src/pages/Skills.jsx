@@ -48,6 +48,7 @@ const Skills = () => {
   return (
     <section id="skills">
       <h2 className="font-p text-center h2 skill-head">Skills</h2>
+      <hr className='hr-line' />
 
       <div className="skill-category ">
         <button
