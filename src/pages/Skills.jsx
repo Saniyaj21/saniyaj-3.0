@@ -77,7 +77,7 @@ const Skills = () => {
 
 
         {/* backend box */}
-        <div className="div-flex card-container border" id="box-back">
+        <div className="div-flex card-container" id="box-back">
           <div
           
           data-aos="fade-right"
@@ -113,6 +113,7 @@ const Skills = () => {
 
             <div className="icon">
             <img  id="mongodb" src={mongodb} alt="" />
+            {/* <SiExpress/> */}
             </div>
             <div className="tech">Mongo DB</div>
 

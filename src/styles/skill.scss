@@ -23,10 +23,10 @@
   color: white;
 }
 #box-back {
-  display: block;
+  display: none;
 }
 #box-front {
-  display: none;
+  display: block;
 }
 #box-design {
   display: none;
@@ -65,12 +65,12 @@
 
 #mongodb {
   width: auto;
-  height: 20px;
+  height: 30px;
   object-fit: cover;
 }
 #django {
   width: auto;
-  height: 25px;
+  height: 30px;
   object-fit: cover;
 }
 #git-icon{
