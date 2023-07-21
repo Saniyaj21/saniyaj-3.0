@@ -18,6 +18,9 @@ const Projects = () => {
 
 
         <section id="projects">
+
+<h2 className='h2 font-p text-center'>Projects</h2>
+            <hr className='hr-line' />
             <div className='project'>
 
                 <select value={selectedOption} onChange={handleOptionChange}>

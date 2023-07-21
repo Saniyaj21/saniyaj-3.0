@@ -22,6 +22,7 @@ const Contact = () => {
 
                 <div className="contact-head font-p">
                     <h1 className="h2 text-center">Contact Me</h1>
+                    <hr className='hr-line' />
                 </div>
 
                 {/* social media icons */}
