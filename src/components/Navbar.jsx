@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/navbar.scss';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import dp from '../media/sani.png'
+import dp from '../media/sani2.png'
 
 // aos
 import AOS from 'aos';
@@ -18,12 +18,12 @@ const Navbar = () => {
     const [isNavActive, setNavActive] = useState(false);
 
     const openMenu = () => {
-        console.log('OPEN');
+        
         setNavActive(true);
     };
 
     const closeNav = () => {
-        console.log('CLOSE');
+        
         setNavActive(false);
     };
 
