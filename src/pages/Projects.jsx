@@ -3,6 +3,7 @@ import { useState } from "react";
 import data from "../data.json";
 import ProjectCard from "../components/ProjectCard";
 
+
 import "../styles/project.scss";
 // import { motion } from 'framer-motion';
 
@@ -34,48 +35,37 @@ const Projects = () => {
           </select>
         </div>
 
-       
+        {data.map((item, key) => {
 
-        {data.map((item) => {
           if (item.tags.includes(selectedOption)) {
+            
             return (
-                <div className="project-card div-flex">
-                <div className="project-details">
-                  <h2>{item.name}</h2>
-                  <p>
-                    Project Description: A brief description of the project and its
-                    features.
-                  </p>
-                  <div className="buttons">
-                    <a href="#" className="live-demo-button">
-                      Visit Live Demo
-                    </a>
-                    <a href="#" className="source-code-button">
-                      View Source Code
-                    </a>
-                  </div>
+              <div className="project-card div-flex">
+              <div className="project-details">
+                <h2>{item.name}</h2>
+                <p>
+                  Project Description: A brief description of the project and its
+                  features.
+                </p>
+                <div className="buttons">
+                  <a href="#" className="live-demo-button">
+                    Visit Live Demo
+                  </a>
+                  <a href="#" className="source-code-button">
+                    View Source Code
+                  </a>
                 </div>
-                <div className="project-image">
-                  <img src="project-screenshot.jpg" alt="Project Screenshot" />
-                  <div className="tags">
+              </div>
+              <div className="project-image">
+              <img src={item.img}alt={item.name}/>
+                <div className="tags">
                   {item.tags.map((tag, index) => (
                     <span className="tags-span">{tag}</span>
                   ))}
-                  </div>
                 </div>
               </div>
+            </div>
 
-
-
-
-            //   <ProjectCard key={item.id} item={item} />
-              //   <div key={item.id}>
-              //     <h2>{item.name}</h2>
-
-                //   {item.tags.map((tag, index) => (
-                //     <li key={index}>{tag}</li>
-                //   ))}
-              //   </div>
             );
           }
         })}
