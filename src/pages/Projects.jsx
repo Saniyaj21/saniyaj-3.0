@@ -9,6 +9,7 @@ import "../styles/project.scss";
 
 const Projects = () => {
   const [selectedOption, setSelectedOption] = useState("");
+  const [projects, setProjects] = useState(data);
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
@@ -35,14 +36,16 @@ const Projects = () => {
           </select>
         </div>
 
-        {data.map((item, key) => {
+        {projects.map((item, key) => {
 
           if (item.tags.includes(selectedOption)) {
+
+            const {id, name, tags, location} = item;
             
             return (
               <div className="project-card div-flex">
               <div className="project-details">
-                <h2>{item.name}</h2>
+                <h2>{name}</h2>
                 <p>
                   Project Description: A brief description of the project and its
                   features.
@@ -57,9 +60,9 @@ const Projects = () => {
                 </div>
               </div>
               <div className="project-image">
-              <img src={item.img}alt={item.name}/>
+              <img src={location}alt={name}/>
                 <div className="tags">
-                  {item.tags.map((tag, index) => (
+                  {tags.map((tag, index) => (
                     <span className="tags-span">{tag}</span>
                   ))}
                 </div>

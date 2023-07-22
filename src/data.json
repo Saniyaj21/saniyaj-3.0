@@ -7,7 +7,7 @@
             "django",
             "all"
         ],
-        "img":"images/p4.png"
+        "location":"images/p4.jpg"
     },
     {
         "id": 2,
@@ -18,7 +18,7 @@
             "javascript",
             "all"
         ],
-        "img":"images/p4.png"
+        "location":"images/p4.jpg"
     },
     {
         "id": 3,
@@ -29,7 +29,7 @@
             "javascript",
             "all"
         ],
-        "img":"images/p4.png"
+        "location":"images/p4.jpg"
     },
     {
         "id": 4,
@@ -40,6 +40,6 @@
             "javascript",
             "all"
         ],
-        "img":"images/p4.png"
+        "location":"images/p3.png"
     }
 ]
