@@ -33,7 +33,7 @@ const Contact = () => {
                         data-aos-duration="100"
                         className="child-1 in-box">
                         <a href="https://www.linkedin.com/in/saniyaj-mallik-27809923a/" target="_blank">
-                            <i class="fa-brands fa-linkedin-in social-icons" style={faColors}
+                            <i className="fa-brands fa-linkedin-in social-icons" style={faColors}
                                 data-aos="zoom-in"
                                 data-aos-duration="1000"
                             ></i>
@@ -44,7 +44,7 @@ const Contact = () => {
                         data-aos-duration="500"
                         className="child-2 in-box">
                         <a href="https://www.facebook.com/saniyaj.mallik.7" target="_blank">
-                            <i class="fa-brands fa-facebook-f social-icons" style={faColors}
+                            <i className="fa-brands fa-facebook-f social-icons" style={faColors}
                                 data-aos="zoom-in"
                                 data-aos-duration="1000"
                             ></i>
@@ -55,7 +55,7 @@ const Contact = () => {
                         data-aos-duration="900"
                         className="child-3 in-box">
                         <a href="https://github.com/Saniyaj21" target="_blank">
-                            <i class="fa-brands fa-github social-icons" style={faColors}
+                            <i className="fa-brands fa-github social-icons" style={faColors}
                                 data-aos="zoom-in"
                                 data-aos-duration="1000"
                             ></i>
@@ -67,7 +67,7 @@ const Contact = () => {
                         data-aos-duration="1300"
                         className="child-4 in-box">
                         <a href="https://www.instagram.com/saniyajmallik/" target="_blank">
-                            <i class="fa-brands fa-instagram social-icons" style={faColors}
+                            <i className="fa-brands fa-instagram social-icons" style={faColors}
                                 data-aos="zoom-in"
                                 data-aos-duration="1000"
                             ></i>

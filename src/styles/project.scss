@@ -1,0 +1,88 @@
+.project-head{
+    color: var(--blue);
+}
+.select-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech-option{
+    margin-top: 20px;
+    height: 40px;
+    padding:0px 10px;
+    border-radius: 5px;
+    border: 2px solid yellow;
+    font-size: 18px;
+    width: 250px;
+    background-color: var(--green);
+    color: white;
+    &:focus{
+        outline: 2px solid white;
+    }
+    option{
+       text-align: center;
+    }
+}
+
+// ProjectCard component
+.project-card {
+    display: flex;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .project-details {
+    padding: 20px;
+  }
+  
+  .project-details h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .project-details p {
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .live-demo-button, .source-code-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .project-image {
+    position: relative;
+  }
+  
+  .project-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .tags {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .tags-span {
+    // display: inline-block;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+  

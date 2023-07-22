@@ -87,7 +87,7 @@ const Skills = () => {
           className="card-items">
 
             <div className="icon">
-              <i style={{ color: "green" }} class="fa-brands fa-node"></i>
+              <i style={{ color: "green" }} className="fa-brands fa-node"></i>
             </div>
             <div className="tech">Node Js</div>
 
@@ -146,7 +146,7 @@ const Skills = () => {
           className="card-items">
 
             <div className="icon">
-            <i style={{ color: "orange" }} class="fa-brands fa-html5"></i>
+            <i style={{ color: "orange" }} className="fa-brands fa-html5"></i>
             </div>
             <div className="tech">HTML 5</div>
 
@@ -159,7 +159,7 @@ const Skills = () => {
           className="card-items">
 
             <div className="icon">
-            <i style={{ color: "blue" }} class="fa-brands fa-css3-alt"></i>
+            <i style={{ color: "blue" }} className="fa-brands fa-css3-alt"></i>
             </div>
             <div className="tech">CSS 3</div>
 
@@ -172,7 +172,7 @@ const Skills = () => {
           className="card-items">
 
             <div className="icon">
-            <i style={{ color: "gold" }} class="fa-brands fa-square-js"></i>
+            <i style={{ color: "gold" }} className="fa-brands fa-square-js"></i>
             </div>
             <div className="tech">JavaScript</div>
 
@@ -185,7 +185,7 @@ const Skills = () => {
           className="card-items">
 
             <div className="icon">
-            <i style={{ color: "aqua" }} class="fa-brands fa-react"></i>
+            <i style={{ color: "aqua" }} className="fa-brands fa-react"></i>
             </div>
             <div className="tech">React</div>
 
@@ -198,7 +198,7 @@ const Skills = () => {
           className="card-items">
 
             <div className="icon">
-            <i style={{ color: "blue" }} class="fa-brands fa-bootstrap"></i>
+            <i style={{ color: "blue" }} className="fa-brands fa-bootstrap"></i>
             </div>
             <div className="tech">Bootstrap</div>
 
@@ -218,7 +218,7 @@ const Skills = () => {
           className="card-items">
 
             <div className="icon">
-            <i class="fa-brands fa-python"></i>
+            <i style={{ color: "blue" }} className="fa-brands fa-python"></i>
             </div>
             <div className="tech">Python</div>
 
@@ -231,7 +231,7 @@ const Skills = () => {
           className="card-items">
 
             <div className="icon">
-            <i class="fa-brands fa-figma"></i>
+            <i style={{ color: "orange" }} className="fa-brands fa-figma"></i>
             </div>
             <div className="tech">Figma</div>
 
@@ -244,7 +244,7 @@ const Skills = () => {
           className="card-items">
 
             <div className="icon">
-            <i class="fa-brands fa-git"></i>
+            <i style={{ color: "orange" }} className="fa-brands fa-git"></i>
             </div>
             <div className="tech" id="git-icon">Git & GitHub</div>
 
@@ -258,27 +258,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-{
-  /* 
-
-       
-
-          <div
-            data-aos="fade-right"
-            data-aos-duration="900"
-            className="bar-box"
-          >
-            <img id="mongodb" src={mongodb} alt="" />
-            <span className="tech">Mongo DB</span>
-          </div>
-
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1300"
-            className="bar-box"
-          >
-            <i style={{ color: "blue" }} class="fa-brands fa-python"></i>
-            <span className="tech">Python/Django</span>
-          </div> */
-}
