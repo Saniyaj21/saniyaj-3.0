@@ -116,9 +116,8 @@ const Home = () => {
           <Skills />
           <Projects />
 
-          <div className="space"></div>
-          <div className="space"></div>
-          <div className="space"></div>
+          {/* <div className="space"></div> */}
+      
 
           <Contact />
         </div>
