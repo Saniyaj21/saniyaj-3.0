@@ -1,15 +1,15 @@
 import React from "react";
-import { useState } from "react";
+import { useState} from "react";
 import data from "../data.json";
-import ProjectCard from "../components/ProjectCard";
 
 
 import "../styles/project.scss";
 // import { motion } from 'framer-motion';
 
 const Projects = () => {
-  const [selectedOption, setSelectedOption] = useState("");
-  const [projects, setProjects] = useState(data);
+  const [selectedOption, setSelectedOption] = useState("top");
+  const [projects] = useState(data);
+
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
@@ -28,47 +28,50 @@ const Projects = () => {
             value={selectedOption}
             onChange={handleOptionChange}
           >
-            <option value="">Select Tech</option>
+            <option value="top">Top Projects</option>
             <option value="all">All</option>
-            <option value="python">Python</option>
-            <option value="django">Django</option>
-            <option value="react">React</option>
+            <option value="frontend">FrontEnd</option>
+            <option value="fullstack">Full Stack</option>
           </select>
         </div>
 
         {projects.map((item, key) => {
+          if (item.category.includes(selectedOption)) {
+            const { name, tags, location } = item;
 
-          if (item.tags.includes(selectedOption)) {
-
-            const {id, name, tags, location} = item;
-            
             return (
-              <div className="project-card div-flex">
-              <div className="project-details">
-                <h2>{name}</h2>
-                <p>
-                  Project Description: A brief description of the project and its
-                  features.
-                </p>
-                <div className="buttons">
-                  <a href="#" className="live-demo-button">
-                    Visit Live Demo
-                  </a>
-                  <a href="#" className="source-code-button">
-                    View Source Code
-                  </a>
-                </div>
-              </div>
-              <div className="project-image">
-              <img src={location}alt={name}/>
-                <div className="tags">
-                  {tags.map((tag, index) => (
-                    <span className="tags-span">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
+              <div
+              
+              data-aos="fade-up"
+                data-aos-duration="500"
 
+              className="project-card div-flex">
+                <div className="project-details">
+                  <h2>{key+1}{". "}{name}</h2>
+                  <p>
+                    Project Description: A brief description of the project and
+                    its features.
+                  </p>
+                  <div className="buttons">
+                    <a href="#" className="source-code-button">
+                      Source Code
+                    </a>
+                    <a href="#" className=" live-demo-button">
+                      Live Demo
+                    </a>
+                  </div>
+                </div>
+                <div className="project-image">
+                  <div className="image-project-box">
+                  <img src={location} alt={name} />
+                  </div>
+                  <div className="tags">
+                    {tags.map((tag, index) => (
+                      <div className="tags-span">{tag}</div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             );
           }
         })}

@@ -7,39 +7,40 @@
             "django",
             "all"
         ],
-        "location":"images/p4.jpg"
+        "category":[
+            "top",
+            "fullstact",
+            "all"
+        ],
+        "location":"images/p5.png"
     },
     {
         "id": 2,
-        "name": "ChatRoom",
+        "name": "ytclone",
         "tags": [
             "python",
             "django",
-            "javascript",
             "all"
         ],
-        "location":"images/p4.jpg"
+        "category":[
+            "top",
+            "frontend",
+            "all"
+        ],
+        "location":"images/p5.png"
     },
     {
         "id": 3,
-        "name": "YtClone",
+        "name": "chatroom",
         "tags": [
-            "react",
-            "api",
-            "javascript",
+            "python",
+            "django",
             "all"
         ],
-        "location":"images/p4.jpg"
-    },
-    {
-        "id": 4,
-        "name": "demo4",
-        "tags": [
-            "mongodb",
-            "api",
-            "javascript",
+        "category":[
+            "fullstact",
             "all"
         ],
-        "location":"images/p3.png"
+        "location":"images/p5.png"
     }
 ]
