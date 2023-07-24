@@ -1,7 +1,6 @@
 import React from "react";
-import { useState} from "react";
+import { useState } from "react";
 import data from "../data.json";
-
 
 import "../styles/project.scss";
 // import { motion } from 'framer-motion';
@@ -9,7 +8,6 @@ import "../styles/project.scss";
 const Projects = () => {
   const [selectedOption, setSelectedOption] = useState("top");
   const [projects] = useState(data);
-
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
@@ -37,37 +35,54 @@ const Projects = () => {
 
         {projects.map((item, key) => {
           if (item.category.includes(selectedOption)) {
-            const { name, tags, location } = item;
+            const { name, tags, location, liveLink, sourceCode } = item;
 
             return (
               <div
-              
-              data-aos="fade-up"
+                key={key}
+                data-aos="fade-up"
                 data-aos-duration="500"
-
-              className="project-card div-flex">
+                className="project-card div-flex"
+              >
                 <div className="project-details">
-                  <h2>{key+1}{". "}{name}</h2>
+                  <h2 className="font-p">
+                    {key + 1}
+                    {". "}
+                    {name}
+                  </h2>
                   <p>
                     Project Description: A brief description of the project and
                     its features.
                   </p>
                   <div className="buttons">
-                    <a href="#" className="source-code-button">
+                    <a
+                      href={sourceCode}
+                      className="source-code-button"
+                      target="blank"
+                    >
                       Source Code
                     </a>
-                    <a href="#" className=" live-demo-button">
-                      Live Demo
-                    </a>
+
+                    {liveLink !== null && (
+                      <a
+                        href={liveLink}
+                        className=" live-demo-button"
+                        target="blank"
+                      >
+                        Live Demo
+                      </a>
+                    )}
                   </div>
                 </div>
                 <div className="project-image">
                   <div className="image-project-box">
-                  <img src={location} alt={name} />
+                    <img src={location} alt={name} />
                   </div>
                   <div className="tags">
                     {tags.map((tag, index) => (
-                      <div className="tags-span">{tag}</div>
+                      <div key={index} className="tags-span">
+                        {tag}
+                      </div>
                     ))}
                   </div>
                 </div>

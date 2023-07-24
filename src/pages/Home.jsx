@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // frammer motion
 import { motion } from "framer-motion";
@@ -14,6 +14,7 @@ import Skills from "../pages/Skills";
 import Qualification from "../pages/Qualification";
 import Contact from "../pages/Contact";
 import Loading from "../components/Loading";
+import Footer from "../components/Footer";
 
 // style
 import "../styles/home.scss";
@@ -115,13 +116,10 @@ const Home = () => {
           <Qualification />
           <Skills />
           <Projects />
-
-          {/* <div className="space"></div> */}
-      
-
           <Contact />
         </div>
       )}
+      <Footer />
     </>
   );
 };

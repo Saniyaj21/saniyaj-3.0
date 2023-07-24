@@ -53,15 +53,7 @@ header {
     // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@media (max-width: 767px) {
-    .logo a {
-        font-size: 2rem;
-    }
 
-    header {
-        padding: 0px 5%;
-    }
-}
 
 .navbar {
 
@@ -86,7 +78,7 @@ header {
     width: 100%;
 
     // background-color: rgba(239, 242, 248, 0.993);
-    background-color: var(--green);
+    background-color: #007bff;
     border: 1px solid black;
     box-shadow: inset 0 0em 3em rgba(0, 0, 0, 0.397), 0 0 0 2px rgb(255, 255, 255),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -163,4 +155,19 @@ header {
     height: 100%;
     width: 100%;
     border-radius: 10px;
+}
+
+
+
+@media (max-width: 767px) {
+    .logo a {
+        font-size: 2rem;
+    }
+
+    header {
+        padding: 0px 5%;
+    }
+    .nav-first {
+        min-width: 100%;
+    }
 }
