@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 
+
 // frammer motion
 import { motion } from "framer-motion";
 
@@ -117,6 +118,7 @@ const Home = () => {
           <Qualification />
           <Skills />
           <Projects data={data} />
+          
           <Contact />
         </div>
       )}
