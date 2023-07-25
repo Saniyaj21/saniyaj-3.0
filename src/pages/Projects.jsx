@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import data from "../data.json";
+
 
 import "../styles/project.scss";
 // import { motion } from 'framer-motion';
 
-const Projects = () => {
+const Projects = ({data}) => {
   const [selectedOption, setSelectedOption] = useState("top");
   const [projects] = useState(data);
 
@@ -29,7 +29,7 @@ const Projects = () => {
             <option value="top">Top Projects</option>
             <option value="all">All</option>
             <option value="frontend">FrontEnd</option>
-            <option value="fullstack">Full Stack</option>
+            <option value="fullstact">Full Stack</option>
           </select>
         </div>
 
@@ -70,6 +70,15 @@ const Projects = () => {
                         target="blank"
                       >
                         Live Demo
+                      </a>
+                    )}
+                    {liveLink == null && (
+                      <a
+                        href={liveLink}
+                        className=" live-demo-button"
+                        target="blank"
+                      >
+                        Watch Video
                       </a>
                     )}
                   </div>
