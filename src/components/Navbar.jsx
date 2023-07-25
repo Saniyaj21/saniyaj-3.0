@@ -54,7 +54,7 @@ const Navbar = () => {
             </motion.div>
 
             <a
-              href="#home-section"
+              href="#"
               className="li-link font-p"
               onClick={closeNav}
             >

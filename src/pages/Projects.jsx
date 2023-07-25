@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 
 import "../styles/project.scss";
 // import { motion } from 'framer-motion';
@@ -8,6 +10,7 @@ import "../styles/project.scss";
 const Projects = ({data}) => {
   const [selectedOption, setSelectedOption] = useState("top");
   const [projects] = useState(data);
+ 
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
@@ -35,12 +38,12 @@ const Projects = ({data}) => {
 
         {projects.map((item, key) => {
           if (item.category.includes(selectedOption)) {
-            const { name, tags, location, liveLink, sourceCode } = item;
+            const { id, name, tags, location, liveLink, sourceCode } = item;
 
             return (
               <div
                 key={key}
-                data-aos="fade-up"
+                data-aos="fade-right"
                 data-aos-duration="500"
                 className="project-card div-flex"
               >
@@ -74,12 +77,14 @@ const Projects = ({data}) => {
                     )}
                     {liveLink == null && (
                       <a
-                        href={liveLink}
+                     
+                     href={liveLink}
                         className=" live-demo-button"
                         target="blank"
                       >
-                        Watch Video
+                        Watch Video 
                       </a>
+                      
                     )}
                   </div>
                 </div>
@@ -100,6 +105,9 @@ const Projects = ({data}) => {
           }
         })}
       </div>
+
+      
+
     </section>
   );
 };
