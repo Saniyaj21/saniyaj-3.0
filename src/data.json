@@ -1,52 +1,47 @@
 [
-    {
-        "id": 1,
-        "name": "StudentQ",
-        "tags": [
-            "python",
-            "django",
-            "all"
-        ],
-        "category":[
-            "top",
-            "fullstact",
-            "all"
-        ],
-        "location":"images/linksaver.png",
-        "liveLink":null,
-        "sourceCode":"https://github.com/Saniyaj21/LinkSaverProject"
-    },
-    {
-        "id": 2,
-        "name": "ytclone",
-        "tags": [
-            "python",
-            "django",
-            "all"
-        ],
-        "category":[
-            "top",
-            "frontend",
-            "all"
-        ],
-        "location":"images/p5.png",
-        "liveLink":"https://github.com/Saniyaj21/LinkSaverProject",
-        "sourceCode":"https://github.com/Saniyaj21/LinkSaverProject"
-    },
-    {
-        "id": 3,
-        "name": "chatroom",
-        "tags": [
-            "python",
-            "django",
-            "all"
-        ],
-        "category":[
-            "fullstact",
-            "all"
-        ],
-        "location":"images/p5.png",
-        "liveLink":"https://github.com/Saniyaj21/LinkSaverProject",
-        "sourceCode":"https://github.com/Saniyaj21/LinkSaverProject"
-    }
+  {
+    "id": 1,
+    "name": "StudentQ",
+    "tags": ["python", "django"],
+    "category": ["top", "fullstact", "all"],
+    "location": "images/studentq.png",
+    "liveLink": null,
+    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+  },
+  {
+    "id": 2,
+    "name": "YouTube Clone",
+    "tags": ["python", "django"],
+    "category": ["top", "frontend", "all"],
+    "location": "images/ytclone.png",
+    "liveLink": "https://github.com/Saniyaj21/LinkSaverProject",
+    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+  },
+  {
+    "id": 3,
+    "name": "ChatRoom",
+    "tags": ["python", "django"],
+    "category": ["fullstact", "all"],
+    "location": "images/chatroom.png",
+    "liveLink": "https://github.com/Saniyaj21/LinkSaverProject",
+    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+  },
+  {
+    "id": 4,
+    "name": "Blog",
+    "tags": ["python", "django"],
+    "category": ["fullstact", "all"],
+    "location": "images/blog.png",
+    "liveLink": "https://github.com/Saniyaj21/LinkSaverProject",
+    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+  },
+  {
+    "id": 5,
+    "name": "Link Saver",
+    "tags": ["python", "django"],
+    "category": ["fullstact", "all"],
+    "location": "images/linksaver.png",
+    "liveLink": "https://github.com/Saniyaj21/LinkSaverProject",
+    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+  }
 ]

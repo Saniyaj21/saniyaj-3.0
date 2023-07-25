@@ -22,6 +22,7 @@ import "../styles/home.scss";
 // resumePDF
 import resumePDF from "../media/resume.pdf";
 import banner from "../media/sani2.png";
+import data from "../data.json";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -115,7 +116,7 @@ const Home = () => {
           <About />
           <Qualification />
           <Skills />
-          <Projects />
+          <Projects data={data} />
           <Contact />
         </div>
       )}
