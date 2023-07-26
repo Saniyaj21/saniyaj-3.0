@@ -1,16 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
-import { Link } from "react-router-dom";
-
 
 import "../styles/project.scss";
 // import { motion } from 'framer-motion';
 
-const Projects = ({data}) => {
+const Projects = ({ data }) => {
   const [selectedOption, setSelectedOption] = useState("top");
   const [projects] = useState(data);
- 
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
@@ -31,14 +28,14 @@ const Projects = ({data}) => {
           >
             <option value="top">Top Projects</option>
             <option value="all">All</option>
-            <option value="frontend">FrontEnd</option>
-            <option value="fullstact">Full Stack</option>
+            <option value="frontend">Frontend</option>
+            <option value="fullstack">Full Stack</option>
           </select>
         </div>
 
         {projects.map((item, key) => {
           if (item.category.includes(selectedOption)) {
-            const { id, name, tags, location, liveLink, sourceCode } = item;
+            const { id, name, desc, tags, location, liveLink, sourceCode } = item;
 
             return (
               <div
@@ -49,13 +46,11 @@ const Projects = ({data}) => {
               >
                 <div className="project-details">
                   <h2 className="font-p">
-                    {key + 1}
-                    {". "}
+                    
                     {name}
                   </h2>
                   <p>
-                    Project Description: A brief description of the project and
-                    its features.
+                   {desc}
                   </p>
                   <div className="buttons">
                     <a
@@ -72,20 +67,10 @@ const Projects = ({data}) => {
                         className=" live-demo-button"
                         target="blank"
                       >
-                        Live Demo
+                        Visit Live
                       </a>
                     )}
-                    {liveLink == null && (
-                      <a
-                     
-                     href={liveLink}
-                        className=" live-demo-button"
-                        target="blank"
-                      >
-                        Watch Video 
-                      </a>
-                      
-                    )}
+                    
                   </div>
                 </div>
                 <div className="project-image">
@@ -105,9 +90,6 @@ const Projects = ({data}) => {
           }
         })}
       </div>
-
-      
-
     </section>
   );
 };

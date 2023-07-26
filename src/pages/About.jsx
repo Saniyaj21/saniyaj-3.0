@@ -1,4 +1,5 @@
 import React from 'react';
+import pic from '../media/about.png'
 
 
 // style
@@ -15,7 +16,14 @@ const About = () => {
                 className="main-about">
                 <div className="about-box div-flex">
                     <div className="about-info w-50 ">
-                        something
+                        <div 
+                        
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+
+                        className="img-container-about">
+                            <img src={pic} alt="" />
+                        </div>
                     </div>
                     <div
                         data-aos="fade-up"
