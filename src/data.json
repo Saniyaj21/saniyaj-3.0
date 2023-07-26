@@ -2,46 +2,51 @@
   {
     "id": 1,
     "name": "StudentQ",
-    "tags": ["python", "django"],
-    "category": ["top", "fullstact", "all"],
+    "desc":"This is a student helping platform to quarry any institutes facilities, tution teachers, mess and notices.",
+    "tags": ["python","django","JavaScript","HTML","CSS"],
+    "category": [ "fullstack", "all"],
     "location": "images/studentq.png",
     "liveLink": null,
-    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+    "sourceCode": "https://github.com/Saniyaj21/StudentQ"
   },
   {
     "id": 2,
     "name": "YouTube Clone",
-    "tags": ["python", "django"],
+    "desc":"This is a YouTude clone project with a youTube api.",
+    "tags": ["React", "Api", "JavaScript", "HTML", "Tailwind", "CSS"],
     "category": ["top", "frontend", "all"],
     "location": "images/ytclone.png",
-    "liveLink": "https://github.com/Saniyaj21/LinkSaverProject",
-    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+    "liveLink": "https://yt-saniyaj.vercel.app/",
+    "sourceCode": "https://github.com/Saniyaj21/yt-clone-react-project"
   },
   {
     "id": 3,
     "name": "ChatRoom",
-    "tags": ["python", "django"],
-    "category": ["fullstact", "all"],
+    "desc":"This is Chat application like WhatssApp, one can create, join any group and can message.",
+    "tags": ["Python", "Django", "SQLite", "HTML", "CSS", "JavaScript"],
+    "category": ["fullstack", "all", "top"],
     "location": "images/chatroom.png",
-    "liveLink": "https://github.com/Saniyaj21/LinkSaverProject",
-    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+    "liveLink": null,
+    "sourceCode": "https://github.com/Saniyaj21/Chatting-App_ChatRoom"
   },
   {
     "id": 4,
     "name": "Blog",
-    "tags": ["python", "django"],
-    "category": ["fullstact", "all"],
+    "desc":"This is a Personal blog website, I will create blogs of any probles I faced during building anything and how I solved that. This can help others.",
+    "tags": ["react", "Bootstrap", "HTML", "CSS"],
+    "category": ["frontend", "all", "top"],
     "location": "images/blog.png",
-    "liveLink": "https://github.com/Saniyaj21/LinkSaverProject",
-    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+    "liveLink": "https://saniyaj-blogs.vercel.app/",
+    "sourceCode": "https://github.com/Saniyaj21/Blogs-Saniyaj-project"
   },
   {
     "id": 5,
     "name": "Link Saver",
-    "tags": ["python", "django"],
-    "category": ["fullstact", "all"],
+    "desc":"This is a platform where anyone can save any important link so that he did not forget it, from here he can visit, edit, delete that link.",
+    "tags": ["python", "django","HTML", "CSS", "JavaScript", "SQLite"],
+    "category": ["fullstack", "all"],
     "location": "images/linksaver.png",
-    "liveLink": "https://github.com/Saniyaj21/LinkSaverProject",
+    "liveLink": null,
     "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
   }
 ]

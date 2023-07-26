@@ -193,7 +193,7 @@ const Skills = () => {
           <div
           
           data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos-duration="1300"
           
           className="card-items">
 

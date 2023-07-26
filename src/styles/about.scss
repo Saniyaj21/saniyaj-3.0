@@ -9,7 +9,21 @@
 .about-info {}
 
 .para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     p {
         color: #33315f;
+    }
+}
+
+.img-container-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        border-radius: 100px 30px;
+        width: 280px;
+        height: 280px;
     }
 }
