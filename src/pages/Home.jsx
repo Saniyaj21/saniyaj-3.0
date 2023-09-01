@@ -23,7 +23,7 @@ import "../styles/home.scss";
 // resumePDF
 import resumePDF from "../media/resume.pdf";
 
-import sani4 from '../media/dp-compre.jpg'
+import sani4 from '../media/dp-compre.webp'
 import data from "../data.json";
 
 const Home = () => {
@@ -107,7 +107,7 @@ const Home = () => {
               </div>
 
               <div className="first-box-right div-flex-2-width ">
-                  <img className="banner logo-image" loading="lazy" src={sani4} alt="" />
+                  <img className="banner logo-image" src={sani4} alt="" />
               </div>
             </div>
           </section>

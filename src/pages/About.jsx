@@ -23,7 +23,7 @@ const About = () => {
                         data-aos-duration="800"
 
                         className="img-container-about">
-                            <img src={aboutMe} alt="" />
+                            <img loading="lazy" src={aboutMe} alt="" />
                         </div>
                     </div>
                     <div
