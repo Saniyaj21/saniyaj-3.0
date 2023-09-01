@@ -119,6 +119,20 @@ const Skills = () => {
             <div className="tech">Mongo DB</div>
 
           </div>
+
+          <div
+          
+          data-aos="fade-right"
+            data-aos-duration="100"
+          
+          className="card-items">
+
+            <div className="icon">
+            <i style={{ color: "blue" }} className="fa-brands fa-python"></i>
+            </div>
+            <div className="tech">Python</div>
+
+          </div>
           <div
           
           data-aos="fade-right"
@@ -210,19 +224,7 @@ const Skills = () => {
 
 {/* others box */}
         <div className="div-flex card-container" id="box-design">
-        <div
-          
-          data-aos="fade-right"
-            data-aos-duration="100"
-          
-          className="card-items">
-
-            <div className="icon">
-            <i style={{ color: "blue" }} className="fa-brands fa-python"></i>
-            </div>
-            <div className="tech">Python</div>
-
-          </div>
+        
           <div 
           
           data-aos="fade-right"

@@ -1,5 +1,6 @@
 import React from 'react';
-import pic from '../media/about.png'
+
+import aboutMe from '../media/about-reduced.png'
 
 
 // style
@@ -22,7 +23,7 @@ const About = () => {
                         data-aos-duration="800"
 
                         className="img-container-about">
-                            <img src={pic} alt="" />
+                            <img src={aboutMe} alt="" />
                         </div>
                     </div>
                     <div

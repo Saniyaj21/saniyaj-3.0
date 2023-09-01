@@ -1,113 +1,93 @@
 .writer {
-    z-index: 10;
+	z-index: 10;
 }
 
 .first-main {
-    padding-top: 50px;
+	// padding-top: 50px;
+	min-height: 80vh;
+	justify-content: center;
+	align-items: center;
 }
 
 .first-box-left {
-    padding-top: 50px;
+	padding-top: 50px;
 
-    p {
-        margin: 15px 0px;
-        font-size: 20px;
+	p {
+		margin: 15px 0px;
+		font-size: 20px;
+	}
 
-    }
-
-    button {
-        margin-top: 10px;
-    }
+	button {
+		margin-top: 10px;
+	}
 }
-
-
 
 .home-btn {
-
-    align-items: start;
+	align-items: start;
 }
 
 .resume-btn {
-    background-color: var(--blue);
-    color: white;
+	background-color: var(--blue);
+	color: white;
 
-    &:hover {
-        background-color: white;
-        color: blue;
-    }
+	&:hover {
+		background-color: white;
+		color: blue;
+	}
 }
 
 .resume-btn {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 300,
-        'GRAD' 0,
-        'opsz' 24
+	font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
 }
 
 .home-head-2 {
-    color: #33315f;
-    padding-bottom: 8px;
-    // text-decoration: underline;
-    // color: #525FE1;
+	color: #33315f;
+	padding-bottom: 8px;
+	// text-decoration: underline;
+	// color: #525FE1;
 }
 
 .first-box-right {
-    height: 412px;
-    justify-content: center;
-    align-items: center;
-    
+	justify-content: center;
+	align-items: center;
+	// height: 100%;
 }
 
-.banner-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    img {
-        // margin-top: -300px;
-        width: auto;
-        height: 350px;
-        // border: 1px solid black;
-    }
+.logo-image {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	transition: 0.5s;
+	&:hover{
+		filter: brightness(80%);
+	}
 }
 
 // footer
-.footer{
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    line-height: 20px;
+.footer {
+	background-color: #007bff;
+	color: white;
+	text-align: center;
+	line-height: 20px;
 }
 
-
-@media (min-width: 768px){
-    .banner-box{
-        img{
-            height: 250px;
-        }
-    }
-}
 
 @media (max-width: 767px) {
-    .first-box-left {
-        padding-top: 10px;
-        order: 2;
-    }
-    .banner-box{
-        img{
-            height: 280px;
-        }
-    }
-    .first-box-left{
-        margin-top: -100px;
-    }
-
+	#about {
+		margin-top: 80px;
+	}
+	.first-box-left {
+		padding-top: 10px;
+		order: 2;
+	}
+	.logo-image {
+		width: 100%;
+		height: auto;
+	}
 }

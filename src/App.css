@@ -9,7 +9,12 @@ html {
 }
 
 .container {
-    padding: 0px 14%;
+    /* padding: 0px 14%; */
+    max-width: 120rem;
+   
+    display: block;
+    margin: auto;
+    padding: 0px 30px;
 }
 
 @media (max-width: 767px) {
