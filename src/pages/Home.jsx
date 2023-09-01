@@ -22,7 +22,8 @@ import "../styles/home.scss";
 
 // resumePDF
 import resumePDF from "../media/resume.pdf";
-import banner from "../media/sani2.png";
+
+import sani4 from '../media/dp-compre.jpg'
 import data from "../data.json";
 
 const Home = () => {
@@ -31,7 +32,7 @@ const Home = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -54,8 +55,9 @@ const Home = () => {
         <div className="home container">
 
           <section id="home-section" data-aos="fade-up">
-            <div className="first-main div-flex ">
-              <div className="first-box-left div-flex-2-width ">
+            <div className="first-main div-flex">
+
+              <div className="first-box-left div-flex-2-width  ">
                 <h2 className="home-head-1 h2 font-head">Hi,</h2>
                 <motion.h1
                   initial={{ x: -100 }}
@@ -104,10 +106,8 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="first-box-right div-flex-2-width">
-                <div className="banner-box">
-                  <img className="banner" loading="lazy" src={banner} alt="" />
-                </div>
+              <div className="first-box-right div-flex-2-width ">
+                  <img className="banner logo-image" loading="lazy" src={sani4} alt="" />
               </div>
             </div>
           </section>

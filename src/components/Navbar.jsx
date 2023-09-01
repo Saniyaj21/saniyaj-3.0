@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/navbar.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import dp from "../media/sani2.png";
+import dp from "../media/about-reduced.png";
 
 // aos
 import AOS from "aos";

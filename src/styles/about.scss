@@ -20,10 +20,12 @@
     justify-content: center;
     align-items: center;
     img{
-        border-radius: 30px 20px;
-        border:  2px solid #007bff;
-        
+        border-radius: 30px 20px; 
         width: 280px;
         height: 280px;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
