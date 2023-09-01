@@ -16,7 +16,7 @@ const Qualification = () => {
                     data-aos-duration="400"
 
                     className="q-item-boxes">
-                    <h4 className="course font-p">Post Graduate <span className="current"> <div className="current-dot"></div>Current</span></h4>
+                    <h4 className="course font-p">Post Graduate</h4>
                     <p className="institute">ABC Univercity</p>
                     <p className="subject">Masters's in Computer Application(MCA)</p>
                     <p className="year-marks font-p "><div className="year">2023 - 2025</div><div className="marks">00.0 sgpa</div></p>
