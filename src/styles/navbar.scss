@@ -2,173 +2,349 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: "Lexend Deca Light";
 }
-
 html {
     font-size: 62.5%;
 }
-
-
-p,
-a,
-li {
-    font-size: 1.7rem;
-    color: #20262E;
-}
-
-li a {
-    color: #20262E;
-
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.fa-bars {
-    font-size: 3.2rem;
-    color: white;
+body{
+    overflow-x: hidden;
 }
 
 header {
-    border-bottom: 2px solid blue;
-    height: 6rem;
-    width: 100%;
+    z-index: 10;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 10%;
+    justify-content: center;
     position: sticky;
     top: 0px;
-    align-items: center;
-    overflow: hidden;
-    background-color: var(--blue);
-    // background-color: #0613cf;
-    z-index: 50;
-}
-
-.logo a {
-    font-size: 2.5rem;
-    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-
-.navbar {
-
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: none;
-    transition: all 0.3s linear;
-    overflow: hidden;
-
-}
-
-.nav-first {
     width: 100%;
-    max-width: 33rem;
-    min-width: 30rem;
+    margin-top: 20px;
+    transition: 1s;
 }
-
-.nav-first ul {
-    height: 100%;
-    width: 100%;
-
-    // background-color: rgba(239, 242, 248, 0.993);
-    background-color: #007bff;
-    border: 1px solid black;
-    box-shadow: inset 0 0em 3em rgba(0, 0, 0, 0.397), 0 0 0 2px rgb(255, 255, 255),
-        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    z-index: 50;
+.nav {
+    background-color: green;
+    /* background-color: rgb(214, 31, 31); */
+    height: 50px;
+    width: 95%;
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    padding-top: 100px;
+    justify-content: space-between;
     align-items: center;
-}
-
-.nav-first ul li {
-
-    list-style: none;
-    width: 97%;
-    height: 40px;
-    text-align: center;
-    margin:5px 5px;
+    box-shadow: 1px 3px 3px rgba(2, 1, 24, 0.551);
     transition: 0.5s;
-    border-radius: 5px;
-    font-weight: 500;
-    color: black;
-    letter-spacing: 0.2px;
-    border: 2px solid yellow;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: white;
-    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-    &:hover {
-        // background-color: white;
-        background-color: rgb(54, 54, 253);
-        color: white;
-    }
-
+    overflow: hidden;
 }
-
-.li-link {
-    font-size: 20px;
-    transition: 0.5s;
-    line-height: 40px;
+.nav-mobile {
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px 0px;
     width: 100%;
-    text-transform: uppercase;
+    border-radius: 0px;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    margin: 0px 20px;
+}
+.logo-icon {
+    height: 100%;
+    width: auto;
+    opacity: 100%;
+}
+.menu {
+    height: 100%;
+    width: 70%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.nav-li {
+    list-style: none;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.nav-a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
 }
 
-.active {
+.hamburg {
+    margin-right: 10px;
+    display: none;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+    header{
+        margin-top: 0px;
+        top: 0px;
+    }
+    .nav {
+        align-items: flex-start;      
+        position: relative;
+    }
+    .menu {
+        display: none;
+        width: 100%;
+    }
+    .ul {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .hamburg {
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 15px;
+        cursor: pointer;
+        
+    }
+    .ham-lines {
+        height: 4px;
+        width: 30px;
+        background-color: white;
+        margin: 6px;
+        transition: 0.5s;
+        top: 100px;
+    }
+    .ham .span-1{
+        width: 15px;
+    }
+    .ham .span-3{
+        width: 15px;	
+    }
+}
+
+.menu-toggle {
     display: block;
 }
 
-.fa-square-xmark {
-    position: absolute;
-    top: 5%;
-    right: 15%;
-    font-size: 3.2rem;
-}
-
-.fa-solid {
-    cursor: pointer;
-}
-
-// image
-.image {
-    height: 150px;
-    width: 150px;
-    margin-bottom: 20px;
-    // border: 2px solid aqua;
-    border-radius: 10px;
-    transition: 0.3s;
-
-    &:hover {
-        border-color: blue;
-    }
-}
-
-.nav-dp {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
 
 
 
-@media (max-width: 767px) {
-    .logo a {
-        font-size: 2rem;
-    }
 
-    header {
-        padding: 0px 5%;
-    }
-    .nav-first {
-        min-width: 100%;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     // font-family: "Lexend Deca Light";
+// }
+
+// html {
+//     font-size: 62.5%;
+// }
+
+
+// p,
+// a,
+// li {
+//     font-size: 1.7rem;
+//     color: #20262E;
+// }
+
+// li a {
+//     color: #20262E;
+
+// }
+
+// a {
+//     text-decoration: none;
+//     color: white;
+// }
+
+// .fa-bars {
+//     font-size: 3.2rem;
+//     color: white;
+// }
+
+// header {
+//     border-bottom: 2px solid blue;
+//     height: 6rem;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 0px 10%;
+//     position: sticky;
+//     top: 0px;
+//     align-items: center;
+//     overflow: hidden;
+//     background-color: var(--blue);
+//     // background-color: #0613cf;
+//     z-index: 50;
+// }
+
+// .logo a {
+//     font-size: 2.5rem;
+//     // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+// }
+
+
+
+// .navbar {
+
+//     height: 100vh;
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     display: none;
+//     transition: all 0.3s linear;
+//     overflow: hidden;
+
+// }
+
+// .nav-first {
+//     width: 100%;
+//     max-width: 33rem;
+//     min-width: 30rem;
+// }
+
+// .nav-first ul {
+//     height: 100%;
+//     width: 100%;
+
+//     // background-color: rgba(239, 242, 248, 0.993);
+//     background-color: #007bff;
+//     border: 1px solid black;
+//     box-shadow: inset 0 0em 3em rgba(0, 0, 0, 0.397), 0 0 0 2px rgb(255, 255, 255),
+//         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+//     z-index: 50;
+//     display: flex;
+//     flex-direction: column;
+//     // justify-content: center;
+//     padding-top: 100px;
+//     align-items: center;
+// }
+
+// .nav-first ul li {
+
+//     list-style: none;
+//     width: 97%;
+//     height: 40px;
+//     text-align: center;
+//     margin:5px 5px;
+//     transition: 0.5s;
+//     border-radius: 5px;
+//     font-weight: 500;
+//     color: black;
+//     letter-spacing: 0.2px;
+//     border: 2px solid yellow;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+//     color: white;
+//     // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+//     &:hover {
+//         // background-color: white;
+//         background-color: rgb(54, 54, 253);
+//         color: white;
+//     }
+
+// }
+
+// .li-link {
+//     font-size: 20px;
+//     transition: 0.5s;
+//     line-height: 40px;
+//     width: 100%;
+//     text-transform: uppercase;
+// }
+
+// .active {
+//     display: block;
+// }
+
+// .fa-square-xmark {
+//     position: absolute;
+//     top: 5%;
+//     right: 15%;
+//     font-size: 3.2rem;
+// }
+
+// .fa-solid {
+//     cursor: pointer;
+// }
+
+// // image
+// .image {
+//     height: 150px;
+//     width: 150px;
+//     margin-bottom: 20px;
+//     // border: 2px solid aqua;
+//     border-radius: 10px;
+//     transition: 0.3s;
+
+//     &:hover {
+//         border-color: blue;
+//     }
+// }
+
+// .nav-dp {
+//     height: 100%;
+//     width: 100%;
+//     border-radius: 10px;
+// }
+
+
+
+// @media (max-width: 767px) {
+//     .logo a {
+//         font-size: 2rem;
+//     }
+
+//     header {
+//         padding: 0px 5%;
+//     }
+//     .nav-first {
+//         min-width: 100%;
+//     }
+// }

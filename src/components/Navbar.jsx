@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../styles/navbar.scss";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import dp from "../media/about-reduced.png";
 
 // aos
@@ -13,75 +11,36 @@ const Navbar = () => {
     AOS.init();
   }, []);
 
-  const [isNavActive, setNavActive] = useState(false);
+  const [isNavMobile, setIsNavMobile] = useState(false);
 
-  const openMenu = () => {
-    setNavActive(true);
-  };
-
-  const closeNav = () => {
-    setNavActive(false);
+  const toggleMenu = () => {
+    setIsNavMobile(!isNavMobile);
   };
 
   return (
     <header>
-      <div className="logo">
-        <Link to="/">
-          <span className="font-p">Saniyaj Mallik</span>
-        </Link>
-      </div>
-
-      <div className="menu">
-        <i className="fa-sharp fa-solid fa-bars" onClick={openMenu}></i>
-        <div className={`navbar nav-first ${isNavActive ? "active" : ""}`}>
-          <i
-            className="fa-solid fa-square-xmark"
-            onClick={closeNav}
-            style={{ color: "white" }}
-          ></i>
-
-          <ul>
-            <motion.div
-              className="image"
-              // animate={{
-              //     y: [0, 5, 0],
-              // }}
-              // transition={{
-              //     repeat: Infinity
-              // }}
-            >
-              <img src={dp} alt="" className="nav-dp" />
-            </motion.div>
-
-            <a
-              href="#"
-              className="li-link font-p"
-              onClick={closeNav}
-            >
-              <li>Home</li>
-            </a>
-            <a href="#about" className="li-link font-p" onClick={closeNav}>
-              <li>About</li>
-            </a>
-            <a
-              href="#qualification"
-              className="li-link font-p"
-              onClick={closeNav}
-            >
-              <li>Qualifications</li>
-            </a>
-            <a href="#skills" className="li-link font-p" onClick={closeNav}>
-              <li>Skills</li>
-            </a>
-            <a href="#projects" className="li-link font-p" onClick={closeNav}>
-              <li>Projects</li>
-            </a>
-            <a href="#contact" className="li-link font-p" onClick={closeNav}>
-              <li>Contack Me</li>
-            </a>
+      <nav className={`nav ${isNavMobile ? "nav-mobile" : ""}`}>
+        <span className="logo">
+          <a href="#">
+            <img className="logo-icon" src={dp} alt="saniyaj mallik" />
+          </a>
+        </span>
+        <span onClick={toggleMenu} className={`hamburg ${isNavMobile ? "ham" : ""}`}>
+          <div className="span-1 ham-lines"></div>
+          <div className="span-2 ham-lines"></div>
+          <div className="span-3 ham-lines"></div>
+        </span>
+        <div className={`menu ${isNavMobile ? "menu-toggle" : ""}`}>
+          <ul onClick={toggleMenu} className="ul">
+            <li className="nav-li"><a className="nav-a" href="#">Home</a></li>
+            <li className="nav-li"><a className="nav-a" href="#about">About</a></li>
+            <li className="nav-li"><a className="nav-a" href="#qualification">Qualifications</a></li>
+            <li className="nav-li"><a className="nav-a" href="#skills">Skills</a></li>
+            <li className="nav-li"><a className="nav-a" href="#projects">Projects</a></li>
+            <li className="nav-li"><a className="nav-a" href="#contact">ContactMe</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </header>
   );
 };
