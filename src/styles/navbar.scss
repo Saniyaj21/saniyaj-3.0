@@ -38,7 +38,7 @@ header {
     top: 0px;
     height: 100vh;
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 0px 0px;
     width: 100%;
     border-radius: 0px;
 }
@@ -83,17 +83,21 @@ header {
     margin-right: 10px;
     display: none;
 }
+.fix-to-top{
+    margin-top: 0px;
+}
 
 /* responsive */
 @media (max-width: 767px) {
     header{
-        margin-top: 0px;
+        margin-top: 20px;
         top: 0px;
     }
     .nav {
         align-items: flex-start;      
         position: relative;
     }
+
     .menu {
         display: none;
         width: 100%;
@@ -119,6 +123,9 @@ header {
         margin: 6px;
         transition: 0.5s;
         top: 100px;
+    }
+    .ham .hamburg{
+       top: 150px;
     }
     .ham .span-1{
         width: 15px;

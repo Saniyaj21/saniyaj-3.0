@@ -5,8 +5,15 @@ import { SiExpress } from "react-icons/si";
 import mongodb from "../media/MongoDB_Logo.svg.png";
 import django from "../media/django-logo-big.jpg";
 
+// aos
+
+
+
+
 const Skills = () => {
   function activeBtn(n) {
+
+
     const front = document.getElementById("front-end");
     const back = document.getElementById("back-end");
     const design = document.getElementById("design");
@@ -81,8 +88,8 @@ const Skills = () => {
         <div className="div-flex card-container" id="box-back">
           <div
           
-          data-aos="fade-right"
-            data-aos-duration="100"
+          data-aos="zoom-in"
+            data-aos-duration="700"
           
           className="card-items">
 
@@ -94,8 +101,8 @@ const Skills = () => {
           </div>
           <div 
           
-          data-aos="fade-right"
-            data-aos-duration="400"
+          data-aos="zoom-in"
+            data-aos-duration="900"
           
           className="card-items">
 
@@ -107,8 +114,8 @@ const Skills = () => {
           </div>
           <div
           
-          data-aos="fade-right"
-            data-aos-duration="700"
+          data-aos="zoom-in"
+            data-aos-duration="1100"
           
           className="card-items">
 
@@ -122,8 +129,8 @@ const Skills = () => {
 
           <div
           
-          data-aos="fade-right"
-            data-aos-duration="100"
+          data-aos="zoom-in"
+            data-aos-duration="1300"
           
           className="card-items">
 
@@ -135,8 +142,8 @@ const Skills = () => {
           </div>
           <div
           
-          data-aos="fade-right"
-            data-aos-duration="1000"
+          data-aos="zoom-in"
+            data-aos-duration="1600"
           
           className="card-items">
 
@@ -154,8 +161,8 @@ const Skills = () => {
         <div className="div-flex card-container" id="box-front">
         <div
           
-          data-aos="fade-right"
-            data-aos-duration="100"
+          data-aos="zoom-in"
+            data-aos-duration="700"
           
           className="card-items">
 
@@ -167,8 +174,8 @@ const Skills = () => {
           </div>
           <div 
           
-          data-aos="fade-right"
-            data-aos-duration="400"
+          data-aos="zoom-in"
+            data-aos-duration="900"
           
           className="card-items">
 
@@ -180,8 +187,8 @@ const Skills = () => {
           </div>
           <div
           
-          data-aos="fade-right"
-            data-aos-duration="700"
+          data-aos="zoom-in"
+            data-aos-duration="1100"
           
           className="card-items">
 
@@ -193,8 +200,8 @@ const Skills = () => {
           </div>
           <div
           
-          data-aos="fade-right"
-            data-aos-duration="1000"
+          data-aos="zoom-in"
+            data-aos-duration="1300"
           
           className="card-items">
 
@@ -206,8 +213,8 @@ const Skills = () => {
           </div>
           <div
           
-          data-aos="fade-right"
-            data-aos-duration="1300"
+          data-aos="zoom-in"
+            data-aos-duration="1500"
           
           className="card-items">
 
@@ -227,8 +234,8 @@ const Skills = () => {
         
           <div 
           
-          data-aos="fade-right"
-            data-aos-duration="400"
+          data-aos="zoom-in"
+            data-aos-duration="900"
           
           className="card-items">
 
@@ -240,8 +247,8 @@ const Skills = () => {
           </div>
           <div
           
-          data-aos="fade-right"
-            data-aos-duration="700"
+          data-aos="zoom-in"
+            data-aos-duration="1500"
           
           className="card-items">
 

@@ -40,8 +40,9 @@ const Projects = ({ data }) => {
             return (
               <div
                 key={key}
-                data-aos="fade-right"
-                data-aos-duration="500"
+                data-aos="zoom-in-up"
+                data-aos-offset="300"
+                data-aos-duration="700"
                 className="project-card div-flex"
               >
                 <div className="project-details">

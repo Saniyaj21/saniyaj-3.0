@@ -9,9 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+ 
     p {
-        color: #33315f;
+        color: rgba(0, 128, 0, 0.771);
+        // color: #33315f;
         margin-top: 10px;
+        font-size: 18px;
+       
+
     }
 }
 
@@ -26,6 +31,18 @@
         transition: 0.3s;
         &:hover{
             transform: scale(1.2);
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+	
+	.para {
+     
+        p {
+          
+            font-size: 14px;
         }
     }
 }

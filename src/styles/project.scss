@@ -54,6 +54,7 @@
 
 .project-details p {
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .live-demo-button,
@@ -67,6 +68,7 @@
   text-decoration: none;
   border-radius: 5px;
   position: absolute;
+  font-size: 18px;
   &:hover{
     background: transparent;
     color:#007bff ;
@@ -142,7 +144,11 @@
   .source-code-button {
     position: relative;
     padding: 7px 10px;
+    font-size: 15px;
 
+  }
+  .project-details p {
+    font-size: 16px;
   }
   .live-demo-button {
     left: -5px;

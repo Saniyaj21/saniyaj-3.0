@@ -65,13 +65,15 @@
 	border-radius: 50%;
 	transition: 0.5s;
 	&:hover{
-		filter: brightness(80%);
+		filter: grayscale(100%);
+		// filter: brightness(80%);
 	}
 }
 
 // footer
 .footer {
-	background-color: #007bff;
+	// background-color: #007bff;
+	background-color: green;
 	color: white;
 	text-align: center;
 	line-height: 20px;
