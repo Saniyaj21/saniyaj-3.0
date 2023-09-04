@@ -45,14 +45,16 @@
 .institute {
 	color: var(--blue);
 	padding: 4px 3px;
+	font-size: 15px;
 }
 
 .subject {
 	font-weight: 500;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Carter One', cursive;
 	padding: 2px 3px;
 	border-left: 2px solid var(--yellow);
 	border-top: 2px solid var(--yellow);
+	font-size: 12px;
 }
 
 .year {

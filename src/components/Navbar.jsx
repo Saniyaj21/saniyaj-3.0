@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <header>
+    <header className={`${isNavMobile ? "fix-to-top" : ""}`}>
       <nav className={`nav ${isNavMobile ? "nav-mobile" : ""}`}>
         <span className="logo">
           <a href="#">
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="span-3 ham-lines"></div>
         </span>
         <div className={`menu ${isNavMobile ? "menu-toggle" : ""}`}>
-          <ul onClick={toggleMenu} className="ul">
+          <ul  className="ul">
             <li className="nav-li"><a className="nav-a" href="#">Home</a></li>
             <li className="nav-li"><a className="nav-a" href="#about">About</a></li>
             <li className="nav-li"><a className="nav-a" href="#qualification">Qualifications</a></li>

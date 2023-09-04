@@ -114,7 +114,10 @@ const Home = () => {
           
           <div className="space"></div>
 
+<div id="about">
+
           <About />
+</div>
           <Qualification />
           <Skills />
           <Projects data={data} />

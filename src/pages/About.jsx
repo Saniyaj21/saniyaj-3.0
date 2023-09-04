@@ -8,7 +8,7 @@ import '../styles/about.scss'
 
 const About = () => {
     return (
-        <section id="about"
+        <section 
         >
             <h2 className='h2 font-p text-center p-top about-head'>About Me</h2>
             <hr className='hr-line' />
@@ -19,7 +19,7 @@ const About = () => {
                     <div className="about-info w-50 ">
                         <div 
                         
-                        data-aos="fade-up"
+                        data-aos="zoom-in"
                         data-aos-duration="800"
 
                         className="img-container-about">
@@ -27,7 +27,7 @@ const About = () => {
                         </div>
                     </div>
                     <div
-                        data-aos="fade-up"
+                        data-aos="zoom-in"
                         data-aos-duration="800"
 
                         className="para w-50"
