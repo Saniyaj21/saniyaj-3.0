@@ -8,6 +8,9 @@ import { motion } from "framer-motion";
 // type writer effect
 import { Typewriter } from "react-simple-typewriter";
 
+// home screen dp
+import sani4 from '../media/dp-compre.webp'
+
 // pages/components
 import About from "../pages/About";
 import Projects from "../pages/Projects";
@@ -23,7 +26,7 @@ import "../styles/home.scss";
 // resumePDF
 import resumePDF from "../media/resume.pdf";
 
-import sani4 from '../media/dp-compre.webp'
+
 import data from "../data.json";
 
 const Home = () => {
@@ -67,9 +70,9 @@ const Home = () => {
                     stiffness: 260,
                     damping: 20,
                   }}
-                  className="home-head-2 h1 font-head"
+                  className="home-head-2 h1  font-p"
                 >
-                  I'm <span className="name font-head">Saniyaj mallik</span>
+                  I'm <span className="name  font-p">Saniyaj mallik</span>
                 </motion.h1>
                 <h2 className="writer h2">
                   I am a{" "}
