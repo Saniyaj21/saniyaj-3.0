@@ -1,6 +1,7 @@
 import React from 'react';
 
-import aboutMe from '../media/about-reduced.png'
+import aboutMe from '../media/about-reduced.png';
+// import aboutMe from '../media/about-nav-lite.png'
 
 
 // style

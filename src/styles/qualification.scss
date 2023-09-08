@@ -30,6 +30,15 @@
 		margin-left: 0px;
 		margin-right: 0px;
 	}
+	.institute {
+		
+		font-size: 15px;
+	}
+	.subject {
+	
+		font-size: 12px;
+
+	}
 }
 
 .course {
@@ -45,7 +54,7 @@
 .institute {
 	color: var(--blue);
 	padding: 4px 3px;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .subject {
@@ -54,7 +63,11 @@
 	padding: 2px 3px;
 	border-left: 2px solid var(--yellow);
 	border-top: 2px solid var(--yellow);
-	font-size: 12px;
+	font-size: 18px;
+	
+}
+.year-marks{
+	font-size: 16px;
 }
 
 .year {

@@ -11,7 +11,9 @@ const Qualification = () => {
                 data-aos-duration="700"
 
                 className="div-flex q-box-main  ">
-                <div
+
+                    {/* mca div */}
+                {/* <div
                     data-aos="fade-up"
                     data-aos-duration="400"
 
@@ -21,7 +23,7 @@ const Qualification = () => {
                     <p className="subject">Masters's in Computer Application(MCA)</p>
                     <p className="year-marks font-p "><div className="year">2023 - 2025</div><div className="marks">00.0 sgpa</div></p>
                     <div className="circle-point"></div>
-                </div>
+                </div> */}
                 <div
                     data-aos="fade-up"
                     data-aos-duration="800"
@@ -30,7 +32,7 @@ const Qualification = () => {
                     <h4 className="course font-p">Under Graduate</h4>
                     <p className="institute">Panskura Banamali College (Autonomous)</p>
                     <p className="subject">Bachelors's in Computer Application(BCA)</p>
-                    <p className="year-marks font-p"><div className="year">2020 - 2023</div><div className="marks">8.25 sgpa</div></p>
+                    <p className="year-marks font-p"><div className="year">2020 - 2023</div><div className="marks">8.6 cgpa</div></p>
                     <div className="circle-point"></div>
                 </div>
                 <div
