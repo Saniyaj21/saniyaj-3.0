@@ -21,18 +21,23 @@
 		margin-top: 10px;
 	}
 }
-
+.btn-home-call{
+	color: green;
+	// display: flex;
+	// justify-content: space-between;
+}
 .home-btn {
 	align-items: start;
 }
 
 .resume-btn {
-	background-color: var(--blue);
+	background-color:green;
+	// background-color: var(--blue);
 	color: white;
 
 	&:hover {
 		background-color: white;
-		color: blue;
+		color: var(--green);
 	}
 }
 
