@@ -12,7 +12,8 @@
   margin: 0px 5px;
   font-size: 18px;
   &:hover {
-    background-color: var(--green);
+    background-color: green;
+    // background-color: var(--green);
     color: white;
   }
 }
@@ -20,7 +21,7 @@
 
 
 .active-skill-btn {
-  background-color: var(--green);
+  background-color: green;
   color: white;
 }
 #box-back {

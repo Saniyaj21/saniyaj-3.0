@@ -7,10 +7,9 @@
 }
 
 .in-box {
-    height: 80px;
-    width: 80px;
-    background-color:rgba(0, 128, 0, 0.771);
-    // background-color: var(--green);
+    height: 70px;
+    width: 70px;
+    background:transparent;
     margin: 10px;
     display: inline-block;
     border-radius: 50%;
@@ -18,14 +17,20 @@
     justify-content: center;
     align-items: center;
     transition: all 0.9s;
-
-    &:hover {
-        background-color: var(--yellow);
+    border: 1px solid white;
+    border-radius: 10%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.823);
+    &:hover{
+        background-color:rgba(0, 0, 0, 0.214);
     }
+
 }
 
 .social-icons {
     font-size: 45px;
+    color: green;
+    
+   
 
 }
 
@@ -39,7 +44,7 @@
     .in-box {
         width: 60px;
         height: 60px;
-        border-radius: 30%;
+        border-radius: 10%;
        
     }
 }

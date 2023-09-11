@@ -5,7 +5,7 @@
 // colors
 :root {
     --blue: #525FE1;
-    --green: #22A699;
+    --green: green;
     --yellow: #F8B400;
 }
 
@@ -83,18 +83,19 @@
     cursor: pointer;
     margin: 1px 2px;
     background-color: white;
-    color: blue;
+    color: var(--green);
     height: 40px;
     width: 150px;
     border-radius: 5px 5px;
-    border: 1px solid #F86F03;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.542);
+    border: 1px solid green;
     font-size: 20px;
     font-family: 'Yatra One', cursive;
     transition: 0.3s;
 
     &:hover {
         color: white;
-        background-color: var(--blue);
+        background-color: var(--green);
     }
 }
 

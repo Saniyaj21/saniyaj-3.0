@@ -97,8 +97,10 @@ const Home = () => {
                 </p>
 
                 <div className="home-btn div-flex">
-                  <a href="#contact">
-                    <button className="btn">Contact Me</button>
+                  <a href="tel:9775348397">
+                    <button className="btn btn-home-call">
+                    Call Me {" "}<i className="fa-solid fa-phone"></i>
+                     </button>
                   </a>
                   <button className="btn resume-btn" onClick={handleDownload}>
                     Resume{" "}

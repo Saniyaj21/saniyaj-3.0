@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
  
     p {
         color: rgba(0, 128, 0, 0.771);
@@ -18,6 +19,10 @@
        
 
     }
+}
+.btn-about-contact{
+    color: var(--green);
+    border: 1px solid green;
 }
 
 .img-container-about{
