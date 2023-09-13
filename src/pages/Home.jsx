@@ -29,8 +29,11 @@ import data from "../data.json";
 
 const Home = () => {
 	const [loading, setLoading] = useState(true);
+	const [image, setImage] = useState();
+	console.log(image);
 
 	useEffect(() => {
+		setImage(sani4)
 		const timeout = setTimeout(() => {
 			setLoading(false);
 		}, 2000);
@@ -108,7 +111,7 @@ const Home = () => {
 							</div>
 
 							<div className='first-box-right div-flex-2-width '>
-								<img className='banner logo-image' src={sani4} alt='' />
+								<img className='banner logo-image' src={image} alt='' />
 							</div>
 						</div>
 					</section>
@@ -116,13 +119,11 @@ const Home = () => {
 					<div className='space'></div>
 
 					<About />
-
 					<Qualification />
 					<Skills />
 					<Projects data={data} />
-
 					<Contact />
-          <Footer />
+					<Footer />
 				</div>
 			)}
 		</>
