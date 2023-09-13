@@ -10,7 +10,7 @@ const Loading = () => {
 			<div className="text-box">
 				<div className="hi util"></div>
 				<div className="name util"></div>
-				<div className="writer util"></div>
+				<div className="writer-loading util"></div>
 
 				<div className="btn-group">
 					<div className="btn-loading util"></div>
