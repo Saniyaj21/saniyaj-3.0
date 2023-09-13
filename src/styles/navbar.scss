@@ -46,11 +46,20 @@ header {
     height: 50px;
     width: 50px;
     margin: 0px 20px;
+
+    >a{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .logo-icon {
-    height: 100%;
+    height: 80%;
     width: auto;
     opacity: 100%;
+    border-radius: 50%;
 }
 .menu {
     height: 100%;

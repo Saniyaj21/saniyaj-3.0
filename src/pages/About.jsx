@@ -1,7 +1,8 @@
 import React from "react";
 
-import aboutMe from "../media/about-reduced.png";
+// import aboutMe from "../media/about-reduced.png";
 // import aboutMe from '../media/about-nav-lite.png'
+import newPic from '../media/newPic.jpg'
 
 // style
 import "../styles/about.scss";
@@ -19,7 +20,7 @@ const About = () => {
 							data-aos-duration='800'
 							className='img-container-about'
 						>
-							<img loading='lazy' src={aboutMe} alt='' />
+							<img loading='lazy' src={newPic} alt='' />
 						</div>
 					</div>
 					<div
