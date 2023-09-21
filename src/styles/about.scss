@@ -25,15 +25,17 @@
 		color: var(--green);
 		background: transparent;
 	}
-
+	
 	border: 1px solid green;
 }
 
 .img-container-about {
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	img {
+		
 		// border-radius: 50%;
 		border-radius: 10px;
 		border: 3px solid var(--green);
