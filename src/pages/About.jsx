@@ -9,7 +9,7 @@ import "../styles/about.scss";
 
 const About = () => {
 	return (
-		<section>
+		<section id="about">
 			<h2 className='h2 font-p text-center p-top about-head'>About Me</h2>
 			<hr className='hr-line' />
 			<div className='main-about'>

@@ -36,7 +36,7 @@ const Home = () => {
 		setImage(sani4)
 		const timeout = setTimeout(() => {
 			setLoading(false);
-		}, 2000);
+		}, 500);
 
 		return () => clearTimeout(timeout);
 	}, []);
