@@ -2,7 +2,7 @@ import React from "react";
 
 // import aboutMe from "../media/about-reduced.png";
 // import aboutMe from '../media/about-nav-lite.png'
-import newPic from '../media/newPic.jpg'
+import newPic from '../media/saniyaj.jpg'
 
 // style
 import "../styles/about.scss";
