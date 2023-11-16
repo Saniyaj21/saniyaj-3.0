@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/navbar.scss";
-import dp from "../media/newPic.jpg";
+import dp from "../media/saniyaj.jpg";
 // import dp from "../media/about-nav-lite.png";
 
 // aos
