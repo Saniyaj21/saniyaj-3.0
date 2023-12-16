@@ -18,16 +18,17 @@
     align-items: center;
     transition: all 0.9s;
    
-    &:hover{
-        background-color:rgba(0, 0, 0, 0.214);
-    }
+    
 
 }
 
 .social-icons {
     font-size: 45px;
     color: green;
-    
+    transition:all 0.3s;
+    &:hover{
+        color:rgba(0, 0, 0, 0.214);
+    }
    
 
 }
