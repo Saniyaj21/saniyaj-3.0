@@ -24,6 +24,7 @@ import "../styles/home.scss";
 
 // resumePDF
 import resumePDF from "../media/resume.pdf";
+import github from "../media/dots.png";
 
 import data from "../data.json";
 
@@ -33,7 +34,7 @@ const Home = () => {
 	console.log(image);
 
 	useEffect(() => {
-		setImage(sani4)
+		setImage(sani4);
 		const timeout = setTimeout(() => {
 			setLoading(false);
 		}, 500);
@@ -116,7 +117,26 @@ const Home = () => {
 						</div>
 					</section>
 
-					<div className='space'></div>
+					<div className='hero-section'>
+						<div className='works'>
+							<h3 className='font-p'>Year in Review : 2023</h3>
+							<div>
+								<div>
+									63 <i className='fa-solid fa-up-long fa-bounce'></i>
+								</div>
+								<p>Repositories</p>
+							</div>
+							<div>
+								<div>
+									10 <i className='fa-solid fa-up-long fa-bounce'></i>
+								</div>
+								<p>Projects</p>
+							</div>
+						</div>
+						<div className='git-dots'>
+							<img src={github} alt='github-contributions' />
+						</div>
+					</div>
 
 					<About />
 					<Qualification />

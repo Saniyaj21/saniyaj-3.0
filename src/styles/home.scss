@@ -76,6 +76,54 @@
 	}
 }
 
+.hero-section{
+	padding: 5px;
+	background-color: green;
+	margin: 40px 0px;
+	border-radius: 5px;
+
+}
+
+.works{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	padding: 5px 0px;
+	font-size: 16px;
+	
+	>div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		>div{
+			width: 50px;
+			height: 50px;
+			border: 2px solid white;
+			// box-shadow: 2px 2px 2px rgba(255, 248, 248, 0.542);
+			display: flex;
+			gap: 3px;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+		}
+	}
+}
+
+.git-dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	>img{
+		border: 2px solid aqua;
+		min-width: 100%;
+		max-width: 600px;
+		height: auto;
+		border-radius: 5px;
+	}
+}
+
 // footer
 .footer {
 	// background-color: #007bff;
@@ -96,5 +144,24 @@
 	.logo-image {
 		width: 100%;
 		height: auto;
+	}
+	.works{
+		
+		font-size: 12px;
+		
+		>div{
+			
+			>div{
+				width: 40px;
+				height: 40px;
+				border: 2px solid white;
+				// box-shadow: 2px 2px 2px rgba(255, 248, 248, 0.542);
+				display: flex;
+				gap: 3px;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+			}
+		}
 	}
 }
