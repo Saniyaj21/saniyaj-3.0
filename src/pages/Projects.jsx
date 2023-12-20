@@ -34,8 +34,16 @@ const Projects = ({ data }) => {
 
 				{projects.map((item, key) => {
 					if (item.category.includes(selectedOption)) {
-						const { id, name, desc, tags, location, liveLink, sourceCode } =
-							item;
+						const {
+							id,
+							name,
+							desc,
+							tags,
+							location,
+							liveLink,
+							sourceCode,
+							backend,
+						} = item;
 
 						return (
 							<div className='center-div'>
@@ -48,25 +56,28 @@ const Projects = ({ data }) => {
 								>
 									<div className='project-details'>
 										<h2 className='font-p'>{name}</h2>
-										<p>{desc}</p>
+										<p className="font-p">{desc}</p>
 										<div className='buttons'>
-											<a
-												href={sourceCode}
-												className='source-code-button'
-												target='blank'
-											>
-												Source Code
-											</a>
-
-											{liveLink !== null && (
-												<a
-													href={liveLink}
-													className=' live-demo-button'
-													target='blank'
-												>
-													Visit Live
+											<div>
+												<a href={sourceCode} target='blank'>
+													Source Code
 												</a>
-											)}
+											</div>
+											<div>
+												{backend && (
+													<a href={backend} target='blank'>
+														Backend
+													</a>
+												)}
+											</div>
+
+											<div>
+												{liveLink !== null && (
+													<a href={liveLink} target='blank'>
+														Visit Live
+													</a>
+												)}
+											</div>
 										</div>
 									</div>
 									<div className='project-image'>

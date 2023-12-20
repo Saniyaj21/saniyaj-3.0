@@ -1,52 +1,63 @@
 [
-  {
-    "id": 1,
-    "name": "StudentQ",
-    "desc":"This is a student helping platform to quarry any institutes facilities, tution teachers, mess and notices.",
-    "tags": ["python","django","JavaScript","HTML","CSS"],
-    "category": [ "fullstack", "all"],
-    "location": "images/studentq.png",
-    "liveLink": null,
-    "sourceCode": "https://github.com/Saniyaj21/StudentQ"
-  },
-  {
-    "id": 2,
-    "name": "YouTube Clone",
-    "desc":"This is a YouTude clone project with a youTube api.",
-    "tags": ["React", "Api", "JavaScript", "HTML", "Tailwind", "CSS"],
-    "category": ["top", "frontend", "all"],
-    "location": "images/ytclone.png",
-    "liveLink": "https://yt-saniyaj.vercel.app/",
-    "sourceCode": "https://github.com/Saniyaj21/yt-clone-react-project"
-  },
-  {
-    "id": 3,
-    "name": "ChatRoom",
-    "desc":"This is Chat application like WhatssApp, one can create, join any group and can message.",
-    "tags": ["Python", "Django", "SQLite", "HTML", "CSS", "JavaScript"],
-    "category": ["fullstack", "all", "top"],
-    "location": "images/chatroom.png",
-    "liveLink": null,
-    "sourceCode": "https://github.com/Saniyaj21/Chatting-App_ChatRoom"
-  },
-  {
-    "id": 4,
-    "name": "Blog",
-    "desc":"This is a Personal blog website, I will create blogs of any probles I faced during building anything and how I solved that. This can help others.",
-    "tags": ["react", "Bootstrap", "HTML", "CSS"],
-    "category": ["frontend", "all", "top"],
-    "location": "images/blog.png",
-    "liveLink": "https://saniyaj-blogs.vercel.app/",
-    "sourceCode": "https://github.com/Saniyaj21/Blogs-Saniyaj-project"
-  },
-  {
-    "id": 5,
-    "name": "Link Saver",
-    "desc":"This is a platform where anyone can save any important link so that he did not forget it, from here he can visit, edit, delete that link.",
-    "tags": ["python", "django","HTML", "CSS", "JavaScript", "SQLite"],
-    "category": ["fullstack", "all"],
-    "location": "images/linksaver.png",
-    "liveLink": null,
-    "sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
-  }
+	{
+		"id": 1,
+		"name": "CloudShop",
+		"desc": "Explore our single-vendor ecommerce platform with seamless functionality, secure payments, a user-friendly dashboard, smart search, responsive design, order tracking, customer reviews.",
+		"tags": ["React", "Node", "Express", "Mongodb", "Cloudinary"],
+		"category": ["top", "fullstack", "all"],
+		"location": "images/cloudshop.png",
+		"liveLink": "https://sani-cloudshop.vercel.app/",
+		"sourceCode": "https://github.com/Saniyaj21/eCommerce_frontend",
+		"backend": "https://github.com/Saniyaj21/eCommerce_backend"
+	},
+	{
+		"id": 2,
+		"name": "YouTube Clone",
+		"desc": "This is a YouTude clone project with a youTube api.",
+		"tags": ["React", "Api", "JavaScript", "HTML", "Tailwind", "CSS"],
+		"category": ["top", "frontend", "all"],
+		"location": "images/ytclone.png",
+		"liveLink": "https://yt-saniyaj.vercel.app/",
+		"sourceCode": "https://github.com/Saniyaj21/yt-clone-react-project"
+	},
+	{
+		"id": 3,
+		"name": "ChatRoom",
+		"desc": "This is Chat application like WhatssApp, one can create, join any group and can message.",
+		"tags": ["Python", "Django", "SQLite", "HTML", "CSS", "JavaScript"],
+		"category": ["fullstack", "all", "top"],
+		"location": "images/chatroom.png",
+		"liveLink": null,
+		"sourceCode": "https://github.com/Saniyaj21/Chatting-App_ChatRoom"
+	},
+	{
+		"id": 4,
+		"name": "Blog",
+		"desc": "This is a Personal blog website, I will create blogs of any probles I faced during building anything and how I solved that. This can help others.",
+		"tags": ["react", "Bootstrap", "HTML", "CSS"],
+		"category": ["frontend", "all"],
+		"location": "images/blog.png",
+		"liveLink": "https://saniyaj-blogs.vercel.app/",
+		"sourceCode": "https://github.com/Saniyaj21/Blogs-Saniyaj-project"
+	},
+	{
+		"id": 5,
+		"name": "Link Saver",
+		"desc": "This is a platform where anyone can save any important link so that he did not forget it, from here he can visit, edit, delete that link.",
+		"tags": ["python", "django", "HTML", "CSS", "JavaScript", "SQLite"],
+		"category": ["fullstack", "all"],
+		"location": "images/linksaver.png",
+		"liveLink": null,
+		"sourceCode": "https://github.com/Saniyaj21/LinkSaverProject"
+	},
+	{
+		"id": 6,
+		"name": "StudentQ",
+		"desc": "This is a student helping platform to quarry any institutes facilities, tution teachers, mess and notices.",
+		"tags": ["python", "django", "JavaScript", "HTML", "CSS"],
+		"category": ["fullstack", "all"],
+		"location": "images/studentq.png",
+		"liveLink": null,
+		"sourceCode": "https://github.com/Saniyaj21/StudentQ"
+	}
 ]
