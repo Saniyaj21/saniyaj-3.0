@@ -23,7 +23,7 @@ import Footer from "../components/Footer";
 import "../styles/home.scss";
 
 // resumePDF
-import resumePDF from "../media/resume.pdf";
+import resumePDF from "../media/Saniyaj-mallik.pdf";
 import github from "../media/dots.png";
 
 import data from "../data.json";
