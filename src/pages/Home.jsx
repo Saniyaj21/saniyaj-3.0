@@ -31,7 +31,7 @@ import data from "../data.json";
 const Home = () => {
 	const [loading, setLoading] = useState(true);
 	const [image, setImage] = useState();
-	console.log(image);
+	console.log(data);
 
 	useEffect(() => {
 		setImage(sani4);
@@ -128,9 +128,9 @@ const Home = () => {
 							</div>
 							<div>
 								<div>
-									10 <i className='fa-solid fa-up-long fa-bounce'></i>
+									776 <i className='fa-solid fa-up-long fa-bounce'></i>
 								</div>
-								<p>Projects</p>
+								<p>Contribution</p>
 							</div>
 						</div>
 						<div className='git-dots'>

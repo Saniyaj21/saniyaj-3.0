@@ -30,10 +30,10 @@ const About = () => {
 					>
 						<p className='text-fit font-p'>
 							I have recently graduated with a Bachelor of Computer Applications
-							(BCA) from Panskura Banamali College. Throughout my studies, I
+							(BCA) from Panskura Banamali College. Currently pursuing MCA at Haldia Institute Of Technology. Throughout my studies, I
 							focused on web development and became proficient in full-stack
 							development. Known for my consistent delivery of high-quality work
-							and strong work ethic, I am confident that my solid education and
+							and strong work ethic. I am confident that my solid education and
 							practical experience have prepared me to make a valuable
 							contribution in the field of web development.
 						</p>
