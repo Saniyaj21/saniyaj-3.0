@@ -25,7 +25,7 @@
 		"name": "ChatRoom",
 		"desc": "This is Chat application like WhatssApp, one can create, join any group and can message.",
 		"tags": ["Python", "Django", "SQLite", "HTML", "CSS", "JavaScript"],
-		"category": ["fullstack", "all", "top"],
+		"category": ["fullstack", "all"],
 		"location": "images/chatroom.png",
 		"liveLink": null,
 		"sourceCode": "https://github.com/Saniyaj21/Chatting-App_ChatRoom"
@@ -59,5 +59,16 @@
 		"location": "images/studentq.png",
 		"liveLink": null,
 		"sourceCode": "https://github.com/Saniyaj21/StudentQ"
+	},
+	{
+		"id": 7,
+		"name": "CloudGallery",
+		"desc": "An Cloud based image gallery similar to Google photos.Doing client side compression to reduce storage memory, images ore private to user to user.",
+		"tags": ["Mongodb", "Express", "React", "Node", "Cloudinary", "BrowserCompressor"],
+		"category": ["fullstack", "all","top"],
+		"location": "images/cloudgallery.png",
+		"liveLink":"https://sani-cloudgallery.vercel.app/",
+		"sourceCode": "https://github.com/Saniyaj21/cloudgallery_client",
+		"backend": "https://github.com/Saniyaj21/image_uploader_server"
 	}
 ]
