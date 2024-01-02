@@ -49,8 +49,9 @@ const Projects = ({ data }) => {
 							<div className='center-div'>
 								<div
 									key={key}
-									data-aos='zoom-in-up'
+									data-aos='fade-up'
 									data-aos-offset='300'
+									data-aos-delay="200"
 									data-aos-duration='700'
 									className='project-card div-flex'
 								>

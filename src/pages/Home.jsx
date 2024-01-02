@@ -117,7 +117,11 @@ const Home = () => {
 						</div>
 					</section>
 
-					<div className='hero-section'>
+					<div
+						data-aos='fade-up'
+						data-aos-duration='700'
+						className='hero-section'
+					>
 						<div className='works'>
 							<h3 className='font-p'>Year in Review : 2023</h3>
 							<div>
